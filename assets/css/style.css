@@ -21,8 +21,9 @@ h1 {
     padding: 30px;
 }
 
+/* Positioning of all major elements(start button, rules area, quiz area and results area */
 .start_btn,
-.rules_area,
+.instructions_area,
 .quiz_area {
     position: absolute;
     top: 50%;
@@ -30,22 +31,90 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
+/* Start Button Styling */
 .start_btn {
-    font-size: 40px;
+    display: none;
+    font-size: 30px;
     font-weight: 600;
     border: 1px solid white;
-    padding: 10px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    cursor: pointer;
     background: black;
     color: white
 }
+
+/* Instructions area */
+.instructions_area {
+
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #fff;
+    height: 60%;
+}
+
+.instructions_area .instructions_heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid green;
+    padding: 20px 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.instructions_area .instructions_list {
+    padding: 20px: 30px;
+}
+
+.instructions_area .instructions_list .inst {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+
+}
+
+.buttons {
+
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px;
+    border-top: 1px solid lightgrey;
+
+
+
+}
+
+.buttons button {
+    margin: 30px 30px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: green;
+}
+
+
+
+
+
 
 .quiz_area {
     display: none;
 }
 
-.rules_area {
-    display: none;
-}
+
 
 
 
