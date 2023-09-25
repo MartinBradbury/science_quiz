@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #077bff;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 20px;
+}
+
+.start_btn,
+.rules_area,
+.quiz_area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer styling*/
+
+.footer-basic {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+}
+
+.footer-basic #footer-li {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-basic #footer-li {
+    padding: 0 10px;
+}
+
+.footer-basic #footer-li a {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+    padding: 10px;
+}
+
+.footer-basic #footer-li a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+#footer-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat, sans-serif;
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 38px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 0 8px;
+    color: white;
+    opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+.copyright {
+    font-family: Montserrat, sans-serif;
+}
