@@ -9,12 +9,16 @@ body {
     background: #077bff;
 }
 
+h1 {
+    color: white;
+}
+
 .heading {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
-    padding: 20px;
+    background: black;
+    padding: 30px;
 }
 
 .start_btn,
@@ -26,7 +30,22 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.start_btn {
+    font-size: 40px;
+    font-weight: 600;
+    border: 1px solid white;
+    padding: 10px;
+    background: black;
+    color: white
+}
 
+.quiz_area {
+    display: none;
+}
+
+.rules_area {
+    display: none;
+}
 
 
 
@@ -46,13 +65,13 @@ body {
     position: absolute;
     bottom: 0%;
     width: 100%;
-    padding: 10px 0;
+    padding: 5px 0;
     background-color: black;
     color: white;
 }
 
 .footer-basic #footer-li {
-    padding: 0;
+    padding: 0 10px;
     list-style: none;
     text-align: center;
     font-size: 18px;
@@ -60,15 +79,12 @@ body {
     margin-bottom: 0;
 }
 
-.footer-basic #footer-li {
-    padding: 0 10px;
-}
 
 .footer-basic #footer-li a {
     color: white;
     text-decoration: none;
     opacity: 1;
-    padding: 10px;
+    padding: 5px;
 }
 
 .footer-basic #footer-li a:hover {
@@ -79,7 +95,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 10px;
+    padding: 5px 5px;
 }
 
 #footer-li {
