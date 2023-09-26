@@ -120,7 +120,6 @@ h1 {
 
 .game_area {
     width: 80%;
-    height: 60%;
     background: #fff;
     border-radius: 5px;
     opacity: 1;
@@ -138,6 +137,7 @@ h1 {
     background: #fff;
     margin-bottom: 30px;
     margin-top: 40px;
+    border-bottom: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -230,7 +230,40 @@ h1 {
 
 /* Quiz section styling */
 
+.game_area section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px 30px 20px 30px;
+    background: #fff;
+}
 
+.game_area section .que_text {
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.game_area section .option_list {
+    padding: 20px 0;
+    display: block;
+    width: 40%;
+}
+
+.game_area .option_list .option {
+    background: rgb(160, 228, 248);
+    border: 1px solid #8f5ab9;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
 
 
 
