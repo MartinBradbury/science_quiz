@@ -33,11 +33,21 @@ h1 {
     transition: all 0.5 ease;
 }
 
+/* set active windows */
+.instructions_area.activeInfo {
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale (1);
+}
+
+
 /* Start Button Styling */
 .start_btn {
     font-size: 30px;
     font-weight: 600;
     border: 1px solid black;
+    outline: none;
     padding: 20px 30px;
     border-radius: 5px;
     cursor: pointer;
@@ -52,15 +62,17 @@ h1 {
 
 /* Instructions area */
 .instructions_area {
-    display: none;
-    display: ;
-    align-items: center;
-    flex-direction: column;
+
+
     width: 60%;
-    opacity: 1;
+    border-radius: 5px;
+    opacity: 0;
     border: 1px solid black;
     border-radius: 5px;
     background: #fff;
+    /*cannot be clicked when opacity 0*/
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale (0.9);
 
 }
 
