@@ -55,15 +55,15 @@ const progress_bar = document.querySelector(".progress_bar");
 
 // If the start button is clicked
 
-start_btn.onclick = () => {
+start_btn.addEventListener("click", () => {
     instructions_area.classList.add("activeInfo"); //Shows instructions on click
-};
+});
 
-exit_btn.onclick = () => {
+exit_btn.addEventListener("click", () => {
     instructions_area.classList.remove("activeInfo");
-};
+});
 
-begin_btn.onclick = () => {
+begin_btn.addEventListener("click", () => {
     instructions_area.classList.remove("activeInfo");
     game_area.classList.add("activeInfo");
     showQuestions(0);
@@ -71,7 +71,7 @@ begin_btn.onclick = () => {
     startTimer(15);
     startProgressBar(0);
 
-};
+});
 
 
 
@@ -151,7 +151,7 @@ function optionSelected(answer) {
 
 //Next Button on click
 
-next_btn.onclick = () => {
+next_btn.addEventListener("click", () => {
     if (question_count < questions.length) {
         question_count++;
         question_number++;
@@ -166,7 +166,7 @@ next_btn.onclick = () => {
     } else {
         console.log("Questions complete!");
     }
-};
+});
 
 
 
