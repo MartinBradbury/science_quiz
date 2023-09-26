@@ -234,7 +234,7 @@ h1 {
     border: 3px solid black;
 }
 
-.time_line .progress .progress-bar {
+.time_line .progress .progress_bar {
     width: 50%;
     height: 100%;
     border-radius: 30px;
@@ -243,7 +243,7 @@ h1 {
     transition: 1s linear;
 }
 
-.time_line .progress .progress-text {
+.time_line .progress .progress_text {
     position: absolute;
     top: 50%;
     left: 50%;
