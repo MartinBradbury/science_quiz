@@ -71,7 +71,6 @@ h1 {
     border: 1px solid black;
     border-radius: 5px;
     background: #fff;
-    /*cannot be clicked when opacity 0*/
     pointer-events: none;
     transform: translate(-50%, -50%) scale (0.9);
 
@@ -309,10 +308,14 @@ h1 {
     border-color: #c3e6cb;
 }
 
-.option_list .option.correct {
+.option_list .option.incorrect {
     color: #721c24;
     background: #f8d7da;
     border-color: #f5c6cb;
+}
+
+.option_list .option.disabled {
+    pointer-events: none;
 }
 
 

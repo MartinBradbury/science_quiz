@@ -24,6 +24,17 @@ let questions = [
             "8"
         ]
     },
+    {
+        number: 3,
+        question: "What is the name of the bond between two Alpha Glucose Molecules?",
+        answer: "1-4 Glycosidic",
+        options: [
+            "1-4 Glycosidic",
+            "Ester",
+            "Peptide",
+            "Hydrogen"
+        ]
+    },
 
 
 ];
@@ -91,7 +102,51 @@ function showQuestions(index) {
 
     question_text.innerHTML = question_tag;
     option_list.innerHTML = option_tag;
+
+    //sececting correct answer
+
+    const option = option_list.querySelectorAll(".option");
+    for (let i = 0; i < option.length; i++) {
+        option[i].setAttribute("onclick", "optionSelected(this)");
+
+    }
 }
+
+function optionSelected(answer) {
+    let userAns = answer.textContent;
+    let correctAns = questions[question_count].answer;
+    let allOptions = option_list.children.length;
+    if (userAns == correctAns) {
+        answer.classList.add("correct");
+        console.log("Answer is Correct!");
+    } else {
+        answer.classList.add("incorrect");
+        console.log("Answer is wrong!");
+    }
+
+    //once selected, disable all other options
+    for (let i = 0; i < allOptions; i++) {
+        if (option_list.children[i].textContent == correctAns) {
+            option_list.children[i].setAttribute("class", "option correct");
+        }
+    }
+
+
+    // if incorrect answer, show all correct answers
+
+    for (let i = 0; i < allOptions; i++) {
+        option_list.children[i].classList.add("disabled");
+    }
+
+}
+
+
+
+
+
+
+
+
 
 //Next Button on click
 
@@ -106,6 +161,9 @@ next_btn.onclick = () => {
     }
 };
 
+
+
+
 // bottom questions counter 
 
 
@@ -116,6 +174,3 @@ function questionCounter(index) {
 
     bottom_q_counter.innerHTML = totalQTag;
 }
-
-
-
