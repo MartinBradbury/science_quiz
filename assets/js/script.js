@@ -69,7 +69,7 @@ begin_btn.addEventListener("click", () => {
     showQuestions(0);
     questionCounter(1);
     startTimer(15);
-    startProgressBar(0);
+    progressBar(0);
 
 });
 
@@ -185,6 +185,7 @@ function questionCounter(index) {
 
 
 
+// progress bar timer function
 
 function startTimer(time) {
     counter = setInterval(timer, 1000);
@@ -197,15 +198,18 @@ function startTimer(time) {
         }
     }
 }
+// Progress bar function 
 
-function startProgressBar(time) {
-    counterBar = setInterval(timer, 29);
-    function timer() {
-        time += 15;
-        progress_bar.style.width = time + "px";
-        if (time > 550) {
-            clearInterval(counterBar);
-
+function progressBar() {
+    let progress_bar = document.querySelector(".progress_bar");
+    let width = 1;
+    let id = setInterval(frame, 100);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width--;
+            progress_bar.style.width = width + '%';
         }
     }
 }
