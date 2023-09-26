@@ -79,7 +79,7 @@ let question_count = 0;
 let question_number = 1;
 let counter;
 let timeValue = 15;
-let widthValue = 0;
+
 
 //let timer;
 //let progressBar;
@@ -159,8 +159,10 @@ next_btn.addEventListener("click", () => {
         questionCounter(question_number);
         clearInterval(counter);
         startTimer(timeValue);
-        clearInterval(progressBar);
-        startProgressBar(widthValue);
+        clearInterval(frame);
+
+
+
 
 
     } else {
@@ -202,14 +204,14 @@ function startTimer(time) {
 
 function progressBar() {
     let progress_bar = document.querySelector(".progress_bar");
-    let width = 1;
-    let id = setInterval(frame, 100);
+    let widthValue = 1;
+    let bar = setInterval(frame, 100);
     function frame() {
-        if (width >= 100) {
-            clearInterval(id);
+        if (widthValue > 100) {
+            clearInterval(bar);
         } else {
-            width--;
-            progress_bar.style.width = width + '%';
+            widthValue--;
+            progress_bar.style.width = widthValue + '%';
         }
     }
 }
