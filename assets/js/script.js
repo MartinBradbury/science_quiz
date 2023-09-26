@@ -48,6 +48,7 @@ const exit_btn = document.querySelector(".exit_btn");
 const begin_btn = document.querySelector(".begin_btn");
 const game_area = document.querySelector(".game_area");
 const option_list = document.querySelector(".option_list");
+const timer_num = document.querySelector(".progress_text");
 
 
 
@@ -66,6 +67,7 @@ begin_btn.onclick = () => {
     game_area.classList.add("activeInfo");
     showQuestions(0);
     questionCounter(1);
+    startTimer(15);
 
 };
 
@@ -73,6 +75,8 @@ begin_btn.onclick = () => {
 
 let question_count = 0;
 let question_number = 1;
+let counter;
+let timeValue = 15;
 
 //let timer;
 //let progressBar;
@@ -140,14 +144,6 @@ function optionSelected(answer) {
 
 }
 
-
-
-
-
-
-
-
-
 //Next Button on click
 
 next_btn.onclick = () => {
@@ -156,6 +152,10 @@ next_btn.onclick = () => {
         question_number++;
         showQuestions(question_count);
         questionCounter(question_number);
+        clearInterval(counter);
+        startTimer(timeValue);
+
+
     } else {
         console.log("Questions complete!");
     }
@@ -173,4 +173,16 @@ function questionCounter(index) {
     let totalQTag = '<span><p>' + index + '</p>of<p>' + questions.length + '</p>Questions</span>';
 
     bottom_q_counter.innerHTML = totalQTag;
+}
+
+
+
+
+
+function startTimer(time) {
+    counter = setInterval(timer, 1000);
+    function timer() {
+        timer_num.textContent = time;
+        time--; //time up or down can choose -- or ++
+    }
 }
