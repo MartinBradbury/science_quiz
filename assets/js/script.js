@@ -69,7 +69,7 @@ begin_btn.addEventListener("click", () => {
     showQuestions(0);
     questionCounter(1);
     startTimer(15);
-    progressBar(0);
+    startProgressBar(0);
 
 });
 
@@ -78,6 +78,7 @@ begin_btn.addEventListener("click", () => {
 let question_count = 0;
 let question_number = 1;
 let counter;
+let widthValue = 1;
 let timeValue = 15;
 
 
@@ -159,7 +160,8 @@ next_btn.addEventListener("click", () => {
         questionCounter(question_number);
         clearInterval(counter);
         startTimer(timeValue);
-        clearInterval(frame);
+        clearInterval(bar);
+        startProgressBar(widthValue);
 
 
 
@@ -202,10 +204,8 @@ function startTimer(time) {
 }
 // Progress bar function 
 
-function progressBar() {
-    let progress_bar = document.querySelector(".progress_bar");
-    let widthValue = 1;
-    let bar = setInterval(frame, 100);
+function startProgressBar(time) {
+    bar = setInterval(frame, 10);
     function frame() {
         if (widthValue > 100) {
             clearInterval(bar);
