@@ -13,17 +13,11 @@ h1 {
     color: white;
 }
 
-.instructions_area span {
-    padding: 0 5px;
-    font-weight: 600;
-    color: green;
-}
-
 .heading {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: black;
+    background: #077bff;
     padding: 30px;
 }
 
@@ -52,7 +46,9 @@ h1 {
 
 /* Instructions area */
 .instructions_area {
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 60%;
     border: 1px solid black;
     border-radius: 5px;
@@ -77,9 +73,15 @@ h1 {
     align-items: center;
     height: 60px;
     width: 100%;
-    margin: 5px 25%;
+    margin: 5px 0;
     font-size: 20px;
 
+}
+
+.instructions_area span {
+    padding: 0 5px;
+    font-weight: 600;
+    color: green;
 }
 
 .buttons {
@@ -97,13 +99,14 @@ h1 {
 
 .buttons button {
     margin: 30px 30px;
-    height: 40px;
-    width: 100px;
+    padding: 5px;
+    height: 60px;
+    width: 150px;
     border: 1px solid black;
     border-radius: 5px;
     color: black;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     background: green;
@@ -139,7 +142,7 @@ h1 {
     bottom: 0%;
     width: 100%;
     padding: 5px 0;
-    background-color: black;
+    background-color: #077bff;
     color: white;
 }
 
