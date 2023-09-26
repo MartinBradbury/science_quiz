@@ -13,6 +13,12 @@ h1 {
     color: white;
 }
 
+.instructions_area span {
+    padding: 0 5px;
+    font-weight: 600;
+    color: green;
+}
+
 .heading {
     display: flex;
     align-items: center;
@@ -69,8 +75,10 @@ h1 {
 .instructions_area .instructions_list .inst {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 40px;
+    height: 60px;
+    width: 100%;
+    margin: 5px 25%;
+    font-size: 20px;
 
 }
 
