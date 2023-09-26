@@ -54,16 +54,15 @@ begin_btn.onclick = () => {
     instructions_area.classList.remove("activeInfo");
     game_area.classList.add("activeInfo");
     showQuestions(0);
+    questionCounter(1);
 
 };
 
 
 
 let question_count = 0;
+let question_number = 1;
 
-
-
-//let question_number = 0;
 //let timer;
 //let progressBar;
 //let timeValue = 15;
@@ -97,13 +96,26 @@ function showQuestions(index) {
 //Next Button on click
 
 next_btn.onclick = () => {
-    if(question_count < questions.length - 1){
+    if (question_count < questions.length) {
         question_count++;
+        question_number++;
         showQuestions(question_count);
-    }else{
+        questionCounter(question_number);
+    } else {
         console.log("Questions complete!");
     }
-    }
-    
-   
+};
+
+// bottom questions counter 
+
+
+function questionCounter(index) {
+    const bottom_q_counter = game_area.querySelector(".total_questions");
+
+    let totalQTag = '<span><p>' + index + '</p>of<p>' + questions.length + '</p>Questions</span>';
+
+    bottom_q_counter.innerHTML = totalQTag;
+}
+
+
 
