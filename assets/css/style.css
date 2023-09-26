@@ -147,6 +147,7 @@ h1 {
 .game_area header .title {
     font-size: 20px;
     font-weight: 600;
+    margin-bottom: 20px;
 
 }
 
@@ -226,6 +227,10 @@ h1 {
     font-size: 20px;
     font-weight: 600;
 }
+
+/* Quiz section styling */
+
+
 
 
 
