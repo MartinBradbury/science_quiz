@@ -265,6 +265,32 @@ h1 {
     transition: all 0.5s ease;
 }
 
+.game_area .option_list .option:last-child {
+    margin-bottom: 0px;
+}
+
+/* option list in game area hover color */
+
+.game_area .option_list .option:hover {
+    background: #650aaf;
+}
+
+/* selecting correct answer and incorrect answer */
+
+.option_list .option.correct {
+    color: #155724;
+    background: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.option_list .option.correct {
+    color: #721c24;
+    background: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+
+
 /* Game area Footer question and questions total */
 
 .game_area footer {
@@ -311,17 +337,9 @@ footer .next_btn {
     transition: all 0.5s ease;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+footer .next_btn:hover {
+    background: #650aaf;
+}
 
 
 
