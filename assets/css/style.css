@@ -24,11 +24,13 @@ h1 {
 /* Positioning of all major elements(start button, rules area, quiz area and results area */
 .start_btn,
 .instructions_area,
-.game_area {
+.game_area,
+.result_area {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 0.5 ease;
 }
 
 /* Start Button Styling */
@@ -36,12 +38,17 @@ h1 {
     display: none;
     font-size: 30px;
     font-weight: 600;
-    border: 1px solid white;
+    border: 1px solid black;
     padding: 20px 30px;
     border-radius: 5px;
     cursor: pointer;
-    background: black;
+    background: #8f5ab9;
     color: white
+}
+
+.start_btn:hover {
+    background: #650aaf;
+    transition: all 1s ease;
 }
 
 /* Instructions area */
@@ -54,7 +61,7 @@ h1 {
     border: 1px solid black;
     border-radius: 5px;
     background: #fff;
-    height: 60%;
+
 }
 
 .instructions_area .instructions_heading {
@@ -94,8 +101,6 @@ h1 {
     padding: 0 35px;
     border-top: 1px solid lightgrey;
 
-
-
 }
 
 .buttons button {
@@ -113,12 +118,18 @@ h1 {
     background: green;
 }
 
+.buttons button:hover {
+    background: #650aaf;
+    transition: all 1s ease;
+}
+
 
 
 
 /* Game Area */
 
 .game_area {
+    display: none;
     width: 80%;
     background: #fff;
     border-radius: 5px;
@@ -273,6 +284,7 @@ h1 {
 
 .game_area .option_list .option:hover {
     background: #650aaf;
+    transition: all 1s ease;
 }
 
 /* selecting correct answer and incorrect answer */
@@ -288,7 +300,6 @@ h1 {
     background: #f8d7da;
     border-color: #f5c6cb;
 }
-
 
 
 /* Game area Footer question and questions total */
@@ -340,6 +351,47 @@ footer .next_btn {
 footer .next_btn:hover {
     background: #650aaf;
 }
+
+
+/* Results window styling */
+
+.result_area {
+    background: #fff;
+    width: 60%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.9);
+
+}
+
+.result_area .complete_text {
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.result_area .score_text span {
+    display: flex;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.score_text span p {
+    font-weight: 600;
+    padding: 0 4px;
+}
+
+
+
+
+
 
 
 
