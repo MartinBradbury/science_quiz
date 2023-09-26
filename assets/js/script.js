@@ -117,6 +117,8 @@ function showQuestions(index) {
 }
 
 function optionSelected(answer) {
+    clearInterval(counter);
+
     let userAns = answer.textContent;
     let correctAns = questions[question_count].answer;
     let allOptions = option_list.children.length;
@@ -184,5 +186,9 @@ function startTimer(time) {
     function timer() {
         timer_num.textContent = time;
         time--; //time up or down can choose -- or ++
+        if (time < 0) {
+            clearInterval(counter);
+            timer_num.textContent = "0";
+        }
     }
 }
