@@ -49,6 +49,7 @@ const begin_btn = document.querySelector(".begin_btn");
 const game_area = document.querySelector(".game_area");
 const option_list = document.querySelector(".option_list");
 const timer_num = document.querySelector(".progress_text");
+const progress_bar = document.querySelector(".progress_bar");
 
 
 
@@ -68,6 +69,7 @@ begin_btn.onclick = () => {
     showQuestions(0);
     questionCounter(1);
     startTimer(15);
+    startProgressBar(0);
 
 };
 
@@ -77,6 +79,7 @@ let question_count = 0;
 let question_number = 1;
 let counter;
 let timeValue = 15;
+let widthValue = 0;
 
 //let timer;
 //let progressBar;
@@ -156,6 +159,8 @@ next_btn.onclick = () => {
         questionCounter(question_number);
         clearInterval(counter);
         startTimer(timeValue);
+        clearInterval(progressBar);
+        startProgressBar(widthValue);
 
 
     } else {
@@ -189,6 +194,18 @@ function startTimer(time) {
         if (time < 0) {
             clearInterval(counter);
             timer_num.textContent = "0";
+        }
+    }
+}
+
+function startProgressBar(time) {
+    counterBar = setInterval(timer, 29);
+    function timer() {
+        time += 15;
+        progress_bar.style.width = time + "px";
+        if (time > 550) {
+            clearInterval(counterBar);
+
         }
     }
 }
