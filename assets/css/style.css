@@ -239,7 +239,7 @@ h1 {
     background: #fff;
 }
 
-.game_area section .que_text {
+.game_area section .question_text {
     font-size: 25px;
     font-weight: 600;
 
@@ -261,6 +261,52 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+/* Game area Footer question and questions total */
+
+.game_area footer {
+    height: 60px;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.game_area footer .total_questions span {
+    display: flex;
+    user-select: none;
+
+}
+
+footer .total_questions span p {
+    font-weight: 500;
+    padding: 0 5px;
+
+}
+
+footer .total_questions span p:first-child {
+    padding-left: 0px;
+}
+
+/* footer game area next button */
+
+footer .next_btn {
+    /* button hidden until answer selected*/
+    display: ;
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #007bff;
     cursor: pointer;
     transition: all 0.5s ease;
 }
