@@ -2,7 +2,7 @@
 
 let questions = [
     {
-        numb: 1,
+        number: 1,
         question: "which planet is closest to the Sun?",
         answer: "Mercury",
         options: [
@@ -14,7 +14,7 @@ let questions = [
 
     },
     {
-        numb: 1,
+        number: 2,
         question: "How many Carbons in a Hexose sugar?",
         answer: "6",
         options: [
@@ -84,7 +84,7 @@ const quit = document.querySelector(".quit");
 function showQuestions(index) {
     const question_text = document.querySelector(".question_text");
     const option_list = document.querySelector(".option_list");
-    let question_tag = '<span>' + questions[index].question + '</span>';
+    let question_tag = '<span>' + questions[index].number + ". " + questions[index].question + '</span>';
     let option_tag = '<div class="option">' + questions[index].options[0] + '<span></span></div>'
         + '<div class="option">' + questions[index].options[1] + '<span></span ></div>'
         + '<div class="option">' + questions[index].options[2] + '<span></span></div>'
@@ -97,6 +97,13 @@ function showQuestions(index) {
 //Next Button on click
 
 next_btn.onclick = () => {
-    question_count++;
-    showQuestions(question_count);
-};
+    if(question_count < questions.length - 1){
+        question_count++;
+        showQuestions(question_count);
+    }else{
+        console.log("Questions complete!");
+    }
+    }
+    
+   
+
