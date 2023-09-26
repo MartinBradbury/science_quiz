@@ -35,7 +35,6 @@ h1 {
 
 /* Start Button Styling */
 .start_btn {
-    display: none;
     font-size: 30px;
     font-weight: 600;
     border: 1px solid black;
@@ -53,11 +52,12 @@ h1 {
 
 /* Instructions area */
 .instructions_area {
-
     display: none;
+    display: ;
     align-items: center;
     flex-direction: column;
     width: 60%;
+    opacity: 1;
     border: 1px solid black;
     border-radius: 5px;
     background: #fff;
@@ -356,11 +356,13 @@ footer .next_btn:hover {
 /* Results window styling */
 
 .result_area {
+    display: none;
     background: #fff;
     width: 60%;
     padding: 25px 30px;
     border-radius: 5px;
-    display: flex;
+    display: ;
+    /*flex*/
     text-align: center;
     align-items: center;
     flex-direction: column;
@@ -387,12 +389,6 @@ footer .next_btn:hover {
     font-weight: 600;
     padding: 0 4px;
 }
-
-
-
-
-
-
 
 
 /*Footer styling*/
