@@ -352,7 +352,7 @@ footer .total_questions span p:first-child {
 
 footer .next_btn {
     /* button hidden until answer selected*/
-    display: ;
+    display: none;
     height: 40px;
     padding: 0 13px;
     font-size: 18px;
