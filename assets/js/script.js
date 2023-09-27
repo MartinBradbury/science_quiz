@@ -81,14 +81,8 @@ let question_number = 1;
 let counter;
 let widthValue = 100;
 let timeValue = 15;
-let counterLine;
+let progressLine;
 
-
-//let timer;
-//let progressBar;
-//let timeValue = 15;
-//let widthValue = 0; //check this
-//let userScore = 0;
 
 const result_area = document.querySelector(".result_area");
 const next_btn = document.querySelector(".next_btn");
@@ -124,7 +118,7 @@ function showQuestions(index) {
 
 function optionSelected(answer) {
     clearInterval(counter);
-    clearInterval(counterLine);
+    clearInterval(progressLine);
 
     let userAns = answer.textContent;
     let correctAns = questions[question_count].answer;
@@ -163,7 +157,7 @@ next_btn.addEventListener("click", () => {
         questionCounter(question_number);
         clearInterval(counter);
         startTimer(timeValue);
-        clearInterval(counterLine); //Counter Line
+        clearInterval(progressLine); //Counter Line
         startTimerLine(widthValue); //start counter line width
 
 
@@ -205,13 +199,13 @@ function startTimer(time) {
 // Progress bar function 
 
 function startTimerLine(time) {
-    counterLine = setInterval(timer, 160);
+    progressLine = setInterval(timer, 160);
     time = 100;
     function timer() {
         time--;
         time_line.style.width = time + "%";
         if (time > 500) {
-            clearInterval(counterLine);
+            clearInterval(progressLine);
 
         }
     }
