@@ -182,6 +182,20 @@ function showResultArea() {
     game_area.classList.remove("activeGame"); // hide quiz window
     result_area.classList.add("activeResult"); //show results window
 
+    const scoreText = result_area.querySelector(".score_value");
+    if (userScore > 1) { // if user scored more than 2
+        //creating a new span tag and passing the user score number and total question number
+        let scoreTag = '<span>and congrats! , You got <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    else if (userScore > 0) { // if user scored more than 1
+        let scoreTag = '<span>and nice , You got <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    else { // if user scored less than 1
+        let scoreTag = '<span>and sorry , You got only <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
 }
 
 
