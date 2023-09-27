@@ -49,9 +49,7 @@ const begin_btn = document.querySelector(".begin_btn");
 const game_area = document.querySelector(".game_area");
 const option_list = document.querySelector(".option_list");
 const timer_num = document.querySelector(".progress_text");
-const progress_bar = document.querySelector(".progress_bar");
-
-
+const time_line = document.querySelector(".progress_bar");
 
 
 
@@ -71,7 +69,8 @@ begin_btn.addEventListener("click", () => {
     showQuestions(0);
     questionCounter(1);
     startTimer(15);
-    startProgressBar(0);
+    startTimerLine(0);
+
 
 });
 
@@ -82,6 +81,7 @@ let question_number = 1;
 let counter;
 let widthValue = 100;
 let timeValue = 15;
+let counterLine;
 
 
 //let timer;
@@ -124,6 +124,7 @@ function showQuestions(index) {
 
 function optionSelected(answer) {
     clearInterval(counter);
+    clearInterval(counterLine);
 
     let userAns = answer.textContent;
     let correctAns = questions[question_count].answer;
@@ -162,10 +163,8 @@ next_btn.addEventListener("click", () => {
         questionCounter(question_number);
         clearInterval(counter);
         startTimer(timeValue);
-
-
-
-
+        clearInterval(counterLine); //Counter Line
+        startTimerLine(widthValue); //start counter line width
 
 
     } else {
@@ -205,14 +204,16 @@ function startTimer(time) {
 }
 // Progress bar function 
 
-function startProgressBar() {
-    bar = setInterval(frame, 160);
-    function frame() {
-        if (widthValue <= 0) {
-            clearInterval(bar);
-        } else {
-            widthValue--;
-            progress_bar.style.width = widthValue + '%';
+function startTimerLine(time) {
+    counterLine = setInterval(timer, 160);
+    time = 100;
+    function timer() {
+        time--;
+        time_line.style.width = time + "%";
+        if (time > 500) {
+            clearInterval(counterLine);
+
         }
     }
 }
+
