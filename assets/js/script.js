@@ -78,7 +78,7 @@ begin_btn.addEventListener("click", () => {
 let question_count = 0;
 let question_number = 1;
 let counter;
-let widthValue = 1;
+let widthValue = 100;
 let timeValue = 15;
 
 
@@ -204,8 +204,8 @@ function startTimer(time) {
 }
 // Progress bar function 
 
-function startProgressBar(time) {
-    bar = setInterval(frame, 10);
+function startProgressBar() {
+    bar = setInterval(frame, 160);
     function frame() {
         if (widthValue > 100) {
             clearInterval(bar);
