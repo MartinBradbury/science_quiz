@@ -239,7 +239,7 @@ h1 {
     border-radius: 30px;
     overflow: hidden;
     background: linear-gradient(to right, #ea517c, #b478f1);
-    transition: ease 1s linear;
+    transition: width 1s linear;
 }
 
 .time_line .progress .progress_text {

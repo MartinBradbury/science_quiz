@@ -53,6 +53,8 @@ const progress_bar = document.querySelector(".progress_bar");
 
 
 
+
+
 // If the start button is clicked
 
 start_btn.addEventListener("click", () => {
@@ -160,8 +162,7 @@ next_btn.addEventListener("click", () => {
         questionCounter(question_number);
         clearInterval(counter);
         startTimer(timeValue);
-        clearInterval(bar);
-        startProgressBar(widthValue);
+
 
 
 
@@ -207,7 +208,7 @@ function startTimer(time) {
 function startProgressBar() {
     bar = setInterval(frame, 160);
     function frame() {
-        if (widthValue > 100) {
+        if (widthValue <= 0) {
             clearInterval(bar);
         } else {
             widthValue--;
