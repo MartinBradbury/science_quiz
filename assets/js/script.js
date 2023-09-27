@@ -51,9 +51,6 @@ const option_list = document.querySelector(".option_list");
 const timer_num = document.querySelector(".progress_text");
 const time_line = document.querySelector(".progress_bar");
 const result_area = document.querySelector(".result_area");
-const restart_game = document.querySelector(".restart");
-//const quit_game = docment.querySelector("buttons .quit");
-
 
 
 // If the start button is clicked
@@ -90,12 +87,13 @@ let userScore = 0;
 
 
 const next_btn = document.querySelector(".next_btn");
-const restart = document.querySelector(".restart");
 const quit = document.querySelector(".quit");
 
 // Reloads the window on quit quiz button click
 
-
+quit.addEventListener("click", () => {
+    window.location.reload();
+});
 
 // getting the questions from array
 
@@ -157,7 +155,7 @@ function optionSelected(answer) {
 //Next Button on click
 
 next_btn.addEventListener("click", () => {
-    if (question_count < questions.length) {
+    if (question_count < questions.length - 1) {
         question_count++;
         question_number++;
         showQuestions(question_count);
@@ -223,6 +221,22 @@ function startTimer(time) {
         if (time < 0) {
             clearInterval(counter);
             timer_num.textContent = "0";
+
+            // Selects correct answer when timer runs out and stops user selecting an answer.
+            let correctAns = questions[question_count].answer;
+            let allOptions = option_list.children.length;
+
+            for (let i = 0; i < allOptions; i++) {
+                if (option_list.children[i].textContent == correctAns) {
+                    option_list.children[i].setAttribute("class", "option correct");
+                }
+
+            }
+            for (let i = 0; i < allOptions; i++) {
+                option_list.children[i].classList.add("disabled");
+            }
+
+            next_btn.style.display = "block";  //next button appears when answer selected
         }
     }
 }
