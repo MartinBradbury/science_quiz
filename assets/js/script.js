@@ -50,6 +50,9 @@ const game_area = document.querySelector(".game_area");
 const option_list = document.querySelector(".option_list");
 const timer_num = document.querySelector(".progress_text");
 const time_line = document.querySelector(".progress_bar");
+const result_area = document.querySelector(".result_area");
+const restart_game = document.querySelector(".restart");
+//const quit_game = docment.querySelector("buttons .quit");
 
 
 
@@ -65,7 +68,7 @@ exit_btn.addEventListener("click", () => {
 
 begin_btn.addEventListener("click", () => {
     instructions_area.classList.remove("activeInfo");
-    game_area.classList.add("activeInfo");
+    game_area.classList.add("activeGame");
     showQuestions(0);
     questionCounter(1);
     startTimer(15);
@@ -82,9 +85,10 @@ let counter;
 let widthValue = 100;
 let timeValue = 15;
 let progressLine;
+let userScore = 0;
 
 
-const result_area = document.querySelector(".result_area");
+
 const next_btn = document.querySelector(".next_btn");
 const restart = document.querySelector(".restart");
 const quit = document.querySelector(".quit");
@@ -123,7 +127,10 @@ function optionSelected(answer) {
     let userAns = answer.textContent;
     let correctAns = questions[question_count].answer;
     let allOptions = option_list.children.length;
+
     if (userAns == correctAns) {
+        userScore += 1;
+        console.log(userScore);
         answer.classList.add("correct");
         console.log("Answer is Correct!");
     } else {
@@ -164,10 +171,18 @@ next_btn.addEventListener("click", () => {
 
     } else {
         console.log("Questions complete!");
+        showResultArea();
     }
 });
 
+//Results area Function
 
+function showResultArea() {
+    instructions_area.classList.remove("activeInfo"); //hide instructions window
+    game_area.classList.remove("activeGame"); // hide quiz window
+    result_area.classList.add("activeResult"); //show results window
+
+}
 
 
 // bottom questions counter 
