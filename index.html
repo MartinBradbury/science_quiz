@@ -1,83 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
     <link href="assets/css/style.css" rel="stylesheet" />
 
     <title>Science Quiz</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="heading">
-        <h1>Welcome to the Science Quiz!</h1>
-      </div>
+        <div class="heading">
+            <h1>Welcome to the Science Quiz!</h1>
+        </div>
     </header>
 
     <!-- Start the quiz button -->
     <div class="start_btn">
-      <botton>Start</botton>
+        <botton>Start</botton>
     </div>
 
     <!-- Rules of the Quiz -->
     <div class="instructions_area">
-      <div class="instructions_heading">Here are the rules</div>
+        <div class="instructions_heading">Here are the rules</div>
 
-      <div class="instructions_list">
-        <div class="inst">
-          1. This quiz will contain <span> 20 </span>science and nature
-          questions.
+        <div class="instructions_list">
+            <div class="inst">
+                1. This quiz will contain 20 science and nature
+                questions.
+            </div>
+            <div class="inst">
+                2. You will only have 15 seconds to answer each
+                question.
+            </div>
+            <div class="inst">
+                3. Once answer is selected, you will be unable to change your
+                selection.
+            </div>
+            <div class="inst">
+                4. You will gain 1 point for every answer you get
+                correct.
+            </div>
+            <div class="inst">
+                5. Once the quiz has started, you will be unable to pause the quiz.
+            </div>
+            <div class="inst">
+                6. You will be able to replay the quiz or restart the quiz at any
+                point.
+            </div>
         </div>
-        <div class="inst">
-          2. You will only have <span> 15 seconds</span> to answer each
-          question.
+        <div class="buttons">
+            <button class="exit_btn">Exit Quiz</button>
+            <button class="begin_btn">Start Quiz</button>
         </div>
-        <div class="inst">
-          3. Once answer is selected, you will be unable to change your
-          selection.
-        </div>
-        <div class="inst">
-          4. You will gain <span> 1 point </span>for every answer you get
-          correct.
-        </div>
-        <div class="inst">
-          5. Once the quiz has started, you will be unable to pause the quiz.
-        </div>
-        <div class="inst">
-          6. You will be able to replay the quiz or restart the quiz at any
-          point.
-        </div>
-      </div>
-      <div class="buttons">
-        <button class="exit_btn">Exit Quiz</button>
-        <button class="begin_btn">Start Quiz</button>
-      </div>
     </div>
 
     <!-- Quiz game area -->
 
     <div class="game_area">
-      <header>
-        <div class="title">Mr Bradburys Science and Nature Quiz</div>
-        <div class="time_line">
-          <div class="progress">
-            <div class="progress_bar"></div>
-            <span class="progress_text">15</span>
-          </div>
-      </header>
+        <header>
+            <div class="total_questions">
+                <!-- <span
+            ><p>2</p>
+            of
+            <p>2</p>
+            Questions</span
+          > -->
+            </div>
+            <div class="title">Science and Nature Quiz</div>
+            <div class="time_line">
+                <div class="progress">
+                    <div class="progress_bar"></div>
+                    <span class="progress_text">15</span>
+                </div>
+        </header>
 
-      <section>
-        <div class="question_text">
-            <!-- <span>What does HTML stand for?</span> -->
-        </div>
-        <div class="option_list">
-          <!-- <div class="option">
+        <section>
+            <div class="question_text">
+                <!-- <span>What does HTML stand for?</span> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">
             <span>answer 1</span>
           </div>
           <div class="option">
@@ -89,37 +95,30 @@
           <div class="option">
             <span>answer 4</span>
           </div> -->
+            </div>
+        </section>
+
+        <!--Quiz Box Footer-->
+        <footer>
+
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+
+
+    <!--Results window -->
+
+    <div class="result_area">
+        <div class="complete_text">You've complete the Quiz!</div>
+        <div class="score_value">
+            <!-- <span>and sorry, You got only<p>2</p>out of<p>2</p></span> -->
         </div>
-      </section>
+        <div class="buttons">
 
-      <!--Quiz Box Footer-->
-      <footer>
-        <div class="total_questions">
-          <!-- <span
-            ><p>2</p>
-            of
-            <p>2</p>
-            Questions</span
-          > -->
+            <button class="quit">Quit Quiz</button>
         </div>
-        <button class="next_btn">Next Question</button>
-      </footer>
     </div>
-
-
-
-<!--Results window -->
-
-<div class="result_area">
-    <div class="complete_text">You've complete the Quiz!</div>
-    <div class="score_value">
-        <!-- <span>and sorry, You got only<p>2</p>out of<p>2</p></span> -->
-    </div>
-    <div class="buttons">
-        
-        <button class="quit">Quit Quiz</button>
-    </div>
-</div>
 
 
 
@@ -128,35 +127,21 @@
 
     <!--Footer area-->
     <div class="footer-basic">
-      <footer>
-        <div class="social">
-          <a
-            href="http://www.instagram.com"
-            target="_blank"
-            aria-label="Navigate to my Instagram"
-            ><i class="icon ion-social-instagram"></i></a
-          ><a
-            href="http://www.youtube.com"
-            target="_blank"
-            aria-label="Navigate to my Youtube"
-            ><i class="icon ion-social-youtube"></i></a
-          ><a
-            href="http://www.twitter.com"
-            target="_blank"
-            aria-label="Navigate to my Twitter"
-            ><i class="icon ion-social-twitter"></i
-          ></a>
-          <a
-            href="http://www.facebook.com"
-            target="_blank"
-            aria-label="Navigate to my Facebook"
-            ><i class="icon ion-social-facebook"></i
-          ></a>
-        </div>
-        <p class="copyright">Science and Nature Quiz 2023</p>
-      </footer>
+        <footer>
+            <div class="social">
+                <a href="http://www.instagram.com" target="_blank" aria-label="Navigate to my Instagram"><i
+                        class="icon ion-social-instagram"></i></a><a href="http://www.youtube.com" target="_blank"
+                    aria-label="Navigate to my Youtube"><i class="icon ion-social-youtube"></i></a><a
+                    href="http://www.twitter.com" target="_blank" aria-label="Navigate to my Twitter"><i
+                        class="icon ion-social-twitter"></i></a>
+                <a href="http://www.facebook.com" target="_blank" aria-label="Navigate to my Facebook"><i
+                        class="icon ion-social-facebook"></i></a>
+            </div>
+            <p class="copyright">Science and Nature Quiz 2023</p>
+        </footer>
     </div>
 
     <script src="assets/js/script.js"></script>
-  </body>
+</body>
+
 </html>
