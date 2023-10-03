@@ -332,7 +332,7 @@ function showResultArea() {
 
 
 
-// bottom questions counter 
+// top questions counter 
 
 
 function questionCounter(index) {
@@ -341,7 +341,7 @@ function questionCounter(index) {
     let totalQTag = '<span><p>' + index + '</p>of<p>' + questions.length + '</p>Questions</span>';
 
     bottom_q_counter.innerHTML = totalQTag;
-}
+};
 
 
 
@@ -392,5 +392,5 @@ function startTimerLine(time) {
 
         }
     }
-}
+};
 
