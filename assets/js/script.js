@@ -35,6 +35,17 @@ let questions = [
             "Hydrogen"
         ]
     },
+    {
+        number: 3,
+        question: "What is the name of the bond between two Alpha Glucose Molecules?",
+        answer: "1-4 Glycosidic",
+        options: [
+            "1-4 Glycosidic",
+            "Ester",
+            "Peptide",
+            "Hydrogen"
+        ]
+    },
 
 
 ];
@@ -86,6 +97,8 @@ let userScore = 0;
 
 
 
+
+
 const next_btn = document.querySelector(".next_btn");
 const quit = document.querySelector(".quit");
 
@@ -96,6 +109,9 @@ quit.addEventListener("click", () => {
 });
 
 // getting the questions from array
+
+
+
 
 function showQuestions(index) {
     const question_text = document.querySelector(".question_text");
@@ -170,6 +186,7 @@ next_btn.addEventListener("click", () => {
     } else {
         console.log("Questions complete!");
         showResultArea();
+
     }
 });
 
@@ -181,10 +198,14 @@ function showResultArea() {
     result_area.classList.add("activeResult"); //show results window
 
     const scoreText = result_area.querySelector(".score_value");
+
     if (userScore > 1) { // if user scored more than 2
         //creating a new span tag and passing the user score number and total question number
         let scoreTag = '<span>and congrats! , You got <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
+
+
+
     }
     else if (userScore > 0) { // if user scored more than 1
         let scoreTag = '<span>and nice , You got <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
@@ -194,7 +215,47 @@ function showResultArea() {
         let scoreTag = '<span>and sorry , You got only <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
     }
+
+
+
+
+
+
+    //Calculate percentage function and round to whole number
+
+    var a = function calculatePercentage(x, y) {
+        return Math.round((x / y) * 100);
+
+
+    };
+
+
+
+
+    // store percentage function result and put into HTML
+    let result = a(userScore, questions.length) + "%";
+    const percentText = document.querySelector(".percentage");
+
+    let prac = '<span>Your percentage is:' + result + '<span>';
+    percentText.innerHTML = prac;
+
+    const gradeText = document.querySelector(".grade");
+
+    if (a >= 50 + '%') {
+        let gradeTag = '<span>Your grade is:' + 'A' + '</span>';
+        gradeText.innerHTML = gradeTag;
+
+        console.log("congratz");
+    }
+
+
 }
+
+
+
+
+
+
 
 
 // bottom questions counter 
@@ -207,6 +268,10 @@ function questionCounter(index) {
 
     bottom_q_counter.innerHTML = totalQTag;
 }
+
+
+
+
 
 
 
