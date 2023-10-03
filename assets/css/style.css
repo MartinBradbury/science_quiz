@@ -64,6 +64,7 @@ h1 {
     color: rgb(3, 46, 103);
     transition: all 0.3s ease;
     box-shadow: 2px 2px black;
+
 }
 
 /* Instructions area */
@@ -138,13 +139,17 @@ h1 {
     background: rgb(3, 46, 103);
 }
 
+.buttons .quit {
+    margin-top: auto;
+}
+
 .buttons button:hover {
     background: #b1d1f0;
     transition: all .5s ease;
     box-shadow: 2px 2px black;
-    color: rgb(3, 46, 103)
-}
+    color: rgb(3, 46, 103);
 
+}
 
 
 
@@ -158,6 +163,7 @@ h1 {
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
+    box-shadow: 2px 2px 2px black;
 }
 
 /* Game area header question number */
@@ -265,6 +271,7 @@ header .total_questions span p:first-child {
     font-size: 25px;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 30px;
 
 }
 
@@ -298,6 +305,7 @@ header .total_questions span p:first-child {
     background: rgb(3, 46, 103);
     color: #fff;
     transition: all 1s ease;
+    transform: scale(0.95);
 }
 
 /* selecting correct answer and incorrect answer */
@@ -354,6 +362,7 @@ footer .next_btn:hover {
     background: #b1d1f0;
     box-shadow: 3px 3px black;
     color: rgb(3, 46, 103);
+
 }
 
 
@@ -362,7 +371,6 @@ footer .next_btn:hover {
 .result_area {
 
     background: #fff;
-    width: 60%;
     padding: 25px 30px;
     border-radius: 5px;
     display: flex;
@@ -374,27 +382,58 @@ footer .next_btn:hover {
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
+    box-shadow: 2px 2px 2px black;
 
 }
 
 .result_area .complete_text {
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 500;
 
 }
 
-.result_area .score_text span {
+.result_area .percentage {
+    font-size: 25px;
+    font-weight: 500;
+    background: linear-gradient(to left, #b1d1f0, rgb(72, 126, 197));
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+.result_area .grade {
+    font-size: 30px;
+    font-weight: 500;
+    background: linear-gradient(to left, #b1d1f0, rgb(72, 126, 197));
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+
+.result_area .score_value span {
     display: flex;
 
-    margin: 10px 0;
-    font-size: 18px;
+    margin: 10px 10px;
+    font-size: 20px;
     font-weight: 500;
 }
 
-.score_text span p {
-    font-weight: 600;
+.score_value span p {
+    font-weight: 500;
     padding: 0 4px;
 }
+
+.percentage .grade span p {
+    font-weight: 500;
+    padding: 0 4px;
+}
+
 
 
 /*Footer styling*/
@@ -532,6 +571,7 @@ footer .next_btn:hover {
     .game_area section .question_text {
         font-size: 15px;
         font-weight: 500px;
+
     }
 
     .result_area {
@@ -544,21 +584,13 @@ footer .next_btn:hover {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
+@media only screen and (min-width: 1200px) {}

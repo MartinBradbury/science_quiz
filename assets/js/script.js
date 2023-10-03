@@ -13,7 +13,7 @@ let questions = [
         ]
 
     },
-    {
+    /*{
         number: 2,
         question: "How many Carbons in a Hexose sugar?",
         answer: "6",
@@ -111,7 +111,7 @@ let questions = [
             "Peptide",
             "Hydrogen"
         ]
-    },
+    },*/
 
 ];
 
@@ -266,18 +266,18 @@ function showResultArea() {
 
     if (userScore > 1) { // if user scored more than 2
         //creating a new span tag and passing the user score number and total question number
-        let scoreTag = '<span>and congrats! , You got <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
+        let scoreTag = '<span><p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
 
 
 
     }
     else if (userScore > 0) { // if user scored more than 1
-        let scoreTag = '<span>and nice , You got <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
+        let scoreTag = '<span><p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
     }
     else { // if user scored less than 1
-        let scoreTag = '<span>and sorry , You got only <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
+        let scoreTag = '<span><p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
     }
 
@@ -298,29 +298,28 @@ function showResultArea() {
     let result = a(userScore, questions.length) + "%";
     const percentText = document.querySelector(".percentage");
 
-    let prac = '<span>Your percentage is:' + result + '<span>';
+    let prac = '<span>Percentage<p>' + result + '</p><span>';
     percentText.innerHTML = prac;
 
     const gradeText = document.querySelector(".grade");
     // Producing a grade from the percentage
     if (result >= 80 + '%') {
-        let gradeTag = '<span>Your grade is:' + 'A' + '</span>';
+        let gradeTag = '<span>Grade<p>' + 'A' + '</p></span>';
         gradeText.innerHTML = gradeTag;
-
     } else if (result >= 70 + '%') {
-        let gradeTag = '<span>Your grade is:' + 'B' + '</span>';
+        let gradeTag = '<span>Grade<p>' + 'B' + '</p></span>';
         gradeText.innerHTML = gradeTag;
     } else if (result >= 60 + '%') {
-        let gradeTag = '<span>Your grade is:' + 'C' + '</span>';
+        let gradeTag = '<span>Grade<p>' + 'C' + '</p></span>';
         gradeText.innerHTML = gradeTag;
     } else if (result >= 50 + '%') {
-        let gradeTag = '<span>Your grade is:' + 'D' + '</span>';
+        let gradeTag = '<span>Grade<p>' + 'D' + '</p></span>';
         gradeText.innerHTML = gradeTag;
     } else if (result >= 40 + '%') {
-        let gradeTag = '<span>Your grade is:' + 'E' + '</span>';
+        let gradeTag = '<span>Grade<p>' + 'E' + '</p></span>';
         gradeText.innerHTML = gradeTag;
     } else if (result < 40 + '%') {
-        let gradeTag = '<span>Your grade is:' + 'U' + '</span>';
+        let gradeTag = '<span>Grade<p>' + 'U' + '</p></span>';
         gradeText.innerHTML = gradeTag;
     }
 };
