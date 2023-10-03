@@ -229,9 +229,6 @@ function showResultArea() {
 
     };
 
-
-
-
     // store percentage function result and put into HTML
     let result = a(userScore, questions.length) + "%";
     const percentText = document.querySelector(".percentage");
@@ -241,11 +238,14 @@ function showResultArea() {
 
     const gradeText = document.querySelector(".grade");
 
-    if (a >= 50 + '%') {
+    if (result >= 50 + '%') {
         let gradeTag = '<span>Your grade is:' + 'A' + '</span>';
         gradeText.innerHTML = gradeTag;
 
-        console.log("congratz");
+        //console.log("congratz");
+    } else if (result >= 25 + '%') {
+        let gradeTag = '<span>Your grade is:' + 'B' + '</span>';
+        gradeText.innerHTML = gradeTag;
     }
 
 
