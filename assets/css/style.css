@@ -64,7 +64,6 @@ h1 {
     color: rgb(3, 46, 103);
     transition: all 0.3s ease;
     box-shadow: 2px 2px black;
-
 }
 
 /* Instructions area */
@@ -468,6 +467,7 @@ footer .next_btn:hover {
 
 .footer-basic #footer-li a:hover {
     opacity: 1;
+
 }
 
 .footer-basic .social {
@@ -500,6 +500,8 @@ footer .next_btn:hover {
 
 .footer-basic .social>a:hover {
     opacity: 0.9;
+    transform: scale(0.9);
+    color: #0f6bc7;
 }
 
 .footer-basic .copyright {
