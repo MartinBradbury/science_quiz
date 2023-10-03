@@ -36,7 +36,7 @@ let questions = [
         ]
     },
     {
-        number: 3,
+        number: 4,
         question: "What is the name of the bond between two Alpha Glucose Molecules?",
         answer: "1-4 Glycosidic",
         options: [
@@ -46,7 +46,72 @@ let questions = [
             "Hydrogen"
         ]
     },
-
+    {
+        number: 5,
+        question: "What is the name of the bond between two Alpha Glucose Molecules?",
+        answer: "1-4 Glycosidic",
+        options: [
+            "1-4 Glycosidic",
+            "Ester",
+            "Peptide",
+            "Hydrogen"
+        ]
+    },
+    {
+        number: 6,
+        question: "What is the name of the bond between two Alpha Glucose Molecules?",
+        answer: "1-4 Glycosidic",
+        options: [
+            "1-4 Glycosidic",
+            "Ester",
+            "Peptide",
+            "Hydrogen"
+        ]
+    },
+    {
+        number: 7,
+        question: "What is the name of the bond between two Alpha Glucose Molecules?",
+        answer: "1-4 Glycosidic",
+        options: [
+            "1-4 Glycosidic",
+            "Ester",
+            "Peptide",
+            "Hydrogen"
+        ]
+    },
+    {
+        number: 8,
+        question: "What is the name of the bond between two Alpha Glucose Molecules?",
+        answer: "1-4 Glycosidic",
+        options: [
+            "1-4 Glycosidic",
+            "Ester",
+            "Peptide",
+            "Hydrogen"
+        ]
+    },
+    {
+        number: 9,
+        question: "What is the name of the bond between two Alpha Glucose Molecules?",
+        answer: "1-4 Glycosidic",
+        options: [
+            "1-4 Glycosidic",
+            "Ester",
+            "Peptide",
+            "Hydrogen"
+        ]
+    },
+    {
+        number: 10,
+        question: "What is the name of the bond between two Alpha Glucose Molecules?",
+        answer: "1-4 Glycosidic",
+        options: [
+            "1-4 Glycosidic",
+            "Ester",
+            "Peptide",
+            "Hydrogen"
+        ]
+    },
 
 ];
 
@@ -237,19 +302,28 @@ function showResultArea() {
     percentText.innerHTML = prac;
 
     const gradeText = document.querySelector(".grade");
-
-    if (result >= 50 + '%') {
+    // Producing a grade from the percentage
+    if (result >= 80 + '%') {
         let gradeTag = '<span>Your grade is:' + 'A' + '</span>';
         gradeText.innerHTML = gradeTag;
 
-        //console.log("congratz");
-    } else if (result >= 25 + '%') {
+    } else if (result >= 70 + '%') {
         let gradeTag = '<span>Your grade is:' + 'B' + '</span>';
         gradeText.innerHTML = gradeTag;
+    } else if (result >= 60 + '%') {
+        let gradeTag = '<span>Your grade is:' + 'C' + '</span>';
+        gradeText.innerHTML = gradeTag;
+    } else if (result >= 50 + '%') {
+        let gradeTag = '<span>Your grade is:' + 'D' + '</span>';
+        gradeText.innerHTML = gradeTag;
+    } else if (result >= 40 + '%') {
+        let gradeTag = '<span>Your grade is:' + 'E' + '</span>';
+        gradeText.innerHTML = gradeTag;
+    } else if (result < 40 + '%') {
+        let gradeTag = '<span>Your grade is:' + 'U' + '</span>';
+        gradeText.innerHTML = gradeTag;
     }
-
-
-}
+};
 
 
 
