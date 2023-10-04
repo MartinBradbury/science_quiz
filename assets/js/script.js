@@ -1,3 +1,4 @@
+
 // getting required elements using querySelector which identifies elements first time appears.
 
 const start_btn = document.querySelector(".start_btn");
@@ -10,7 +11,6 @@ const timer_num = document.querySelector(".progress_text");
 const time_line = document.querySelector(".progress_bar");
 const result_area = document.querySelector(".result_area");
 
-
 // If the start button is clicked
 
 start_btn.addEventListener("click", () => {
@@ -21,6 +21,9 @@ exit_btn.addEventListener("click", () => {
     instructions_area.classList.remove("activeInfo");
 });
 
+//shuffle array index questions so questions appear in a random order
+let quesCounter = questions.sort(() => Math.random() - .5);
+
 begin_btn.addEventListener("click", () => {
     instructions_area.classList.remove("activeInfo");
     game_area.classList.add("activeGame");
@@ -28,11 +31,7 @@ begin_btn.addEventListener("click", () => {
     questionCounter(1);
     startTimer(15);
     startTimerLine(0);
-
-
 });
-
-
 
 let question_count = 0;
 let question_number = 1;
@@ -41,10 +40,6 @@ let widthValue = 100;
 let timeValue = 15;
 let progressLine;
 let userScore = 0;
-
-
-
-
 
 const next_btn = document.querySelector(".next_btn");
 const quit = document.querySelector(".quit");
@@ -57,17 +52,16 @@ quit.addEventListener("click", () => {
 
 // getting the questions from array
 
-
-
-
 function showQuestions(index) {
     const question_text = document.querySelector(".question_text");
     const option_list = document.querySelector(".option_list");
-    let question_tag = '<span>' + questions[index].number + ". " + questions[index].question + '</span>';
+
+    let question_tag = '<span>' + questions[index].question + '</span>';
     let option_tag = '<div class="option">' + questions[index].options[0] + '<span></span></div>'
         + '<div class="option">' + questions[index].options[1] + '<span></span ></div>'
         + '<div class="option">' + questions[index].options[2] + '<span></span></div>'
         + '<div class="option">' + questions[index].options[3] + '<span></span></div>';
+
 
     question_text.innerHTML = question_tag;
     option_list.innerHTML = option_tag;
@@ -105,7 +99,6 @@ function optionSelected(answer) {
             option_list.children[i].setAttribute("class", "option correct");
         }
     }
-
 
     // if incorrect answer, show all correct answers
 
@@ -146,98 +139,64 @@ function showResultArea() {
 
     const scoreText = result_area.querySelector(".score_value");
 
-    if (userScore > 1) { // if user scored more than 2
-        //creating a new span tag and passing the user score number and total question number
+    if (userScore) {
         let scoreTag = '<span><p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
-
-
-
-    }
-    else if (userScore > 0) { // if user scored more than 1
-        let scoreTag = '<span><p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
-        scoreText.innerHTML = scoreTag;
-    }
-    else { // if user scored less than 1
-        let scoreTag = '<span><p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
-        scoreText.innerHTML = scoreTag;
-    }
-
-
-
-
-
+    };
 
     //Calculate percentage function and round to whole number
 
-    var a = function calculatePercentage(x, y) {
+    var percentage = function calculatePercentage(x, y) {
         return Math.round((x / y) * 100);
-
-
     };
 
     // store percentage function result and put into HTML
-    let result = a(userScore, questions.length) + "%";
+    let result = percentage(userScore, questions.length) + "%";
     const percentText = document.querySelector(".percentage");
 
-    let prac = '<span>Percentage<p>' + result + '</p><span>';
-    percentText.innerHTML = prac;
+    let percentTag = '<span>Percentage<p>' + result + '</p><span>';
+    percentText.innerHTML = percentTag;
 
+    //Generaging a grade from the users percentage
     const gradeText = document.querySelector(".grade");
-    // Producing a grade from the percentage
-    if (result >= 80 + '%') {
+
+    if (result >= 70 + '%') {
         let gradeTag = '<span>Grade<p>' + 'A' + '</p></span>';
         gradeText.innerHTML = gradeTag;
-    } else if (result >= 70 + '%') {
+    } else if (result >= 60 + '%') {
         let gradeTag = '<span>Grade<p>' + 'B' + '</p></span>';
         gradeText.innerHTML = gradeTag;
-    } else if (result >= 60 + '%') {
+    } else if (result >= 50 + '%') {
         let gradeTag = '<span>Grade<p>' + 'C' + '</p></span>';
         gradeText.innerHTML = gradeTag;
-    } else if (result >= 50 + '%') {
+    } else if (result >= 40 + '%') {
         let gradeTag = '<span>Grade<p>' + 'D' + '</p></span>';
         gradeText.innerHTML = gradeTag;
-    } else if (result >= 40 + '%') {
+    } else if (result >= 30 + '%') {
         let gradeTag = '<span>Grade<p>' + 'E' + '</p></span>';
         gradeText.innerHTML = gradeTag;
-    } else if (result < 40 + '%') {
+    } else if (result < 20 + '%') {
         let gradeTag = '<span>Grade<p>' + 'U' + '</p></span>';
         gradeText.innerHTML = gradeTag;
     }
 };
 
-
-
-
-
-
-
-
 // top questions counter 
-
-
 function questionCounter(index) {
-    const bottom_q_counter = game_area.querySelector(".total_questions");
+    const top_q_counter = game_area.querySelector(".total_questions");
 
     let totalQTag = '<span><p>' + index + '</p>of<p>' + questions.length + '</p>Questions</span>';
 
-    bottom_q_counter.innerHTML = totalQTag;
+    top_q_counter.innerHTML = totalQTag;
 };
 
-
-
-
-
-
-
-
-// progress bar timer function
+//timer function
 
 function startTimer(time) {
     counter = setInterval(timer, 1000);
     function timer() {
         timer_num.textContent = time;
-        time--; //time up or down can choose -- or ++
+        time--;
         if (time < 0) {
             clearInterval(counter);
             timer_num.textContent = "0";
@@ -250,13 +209,12 @@ function startTimer(time) {
                 if (option_list.children[i].textContent == correctAns) {
                     option_list.children[i].setAttribute("class", "option correct");
                 }
-
             }
             for (let i = 0; i < allOptions; i++) {
                 option_list.children[i].classList.add("disabled");
             }
-
-            next_btn.style.display = "block";  //next button appears when answer selected
+            //next button appears when answer selected
+            next_btn.style.display = "block";
         }
     }
 }
