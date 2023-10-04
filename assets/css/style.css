@@ -69,7 +69,7 @@ h1 {
 /* Instructions area */
 .instructions_area {
 
-
+    padding: 20px;
     width: 60%;
     border-radius: 5px;
     opacity: 0;
@@ -96,8 +96,6 @@ h1 {
 }
 
 .instructions_area .instructions_list .inst {
-    display: flex;
-    align-items: center;
     height: 60px;
     width: 100%;
     margin: 5px 0;
@@ -598,4 +596,14 @@ footer .next_btn:hover {
 @media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1300px) {
+    .instructions_area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+
+    }
+
+}
