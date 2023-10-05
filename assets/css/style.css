@@ -96,6 +96,7 @@ h1 {
 }
 
 .instructions_area .instructions_list .inst {
+    padding-top: 20px;
     height: 60px;
     width: 100%;
     margin: 5px 0;
