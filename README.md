@@ -11,15 +11,15 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 ### Header and Footer
 *   Header element detailing the quiz title and a interactive footer that will direct users to my social media sites.
 
-[Header](assets/images/header.png)
-[Footer](assets/images/footer.png)
+![Header](assets/images/header.png)
+![Footer](assets/images/footer.png)
 
 ### Interactive Start Button
 *   The users will be greated on the home page with a interactive start button that has a hover effect and opens up the rules window when clicked.
 
-[Start](assets/images/start.png)  
-[Hover](assets/images/hover.png)
-[Rules](assets/images/rules.png)
+![Start](assets/images/start.png)  
+![Hover](assets/images/hover.png)
+![Rules](assets/images/rules.png)
 
 
 ## Languages
