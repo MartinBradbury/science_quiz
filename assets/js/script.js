@@ -22,7 +22,7 @@ exit_btn.addEventListener("click", () => {
 });
 
 //shuffle array index questions so questions appear in a random order
-let quesCounter = questions.sort(() => Math.random() - .5);
+questions.sort(() => Math.random() - .5);
 
 begin_btn.addEventListener("click", () => {
     instructions_area.classList.remove("activeInfo");
@@ -83,7 +83,7 @@ function optionSelected(answer) {
     let correctAns = questions[question_count].answer;
     let allOptions = option_list.children.length;
 
-    if (userAns == correctAns) {
+    if (userAns === correctAns) {
         userScore += 1;
         console.log(userScore);
         answer.classList.add("correct");
