@@ -584,6 +584,10 @@ footer .next_btn:hover {
 
     }
 
+    .game_area section .option_list {
+        padding: 0px 0px 15px 0px;
+    }
+
     .game_area .option_list .option {
         padding: 5px 15px;
         margin-bottom: 20px;
