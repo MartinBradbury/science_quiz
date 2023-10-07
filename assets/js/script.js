@@ -52,29 +52,45 @@ quit.addEventListener("click", () => {
 
 // getting the questions from array
 
+
 function showQuestions(index) {
     const question_text = document.querySelector(".question_text");
     const option_list = document.querySelector(".option_list");
 
-    let question_tag = '<span>' + questions[index].question + '</span>';
-    let option_tag = '<div class="option">' + questions[index].options[0] + '<span></span></div>'
-        + '<div class="option">' + questions[index].options[1] + '<span></span ></div>'
-        + '<div class="option">' + questions[index].options[2] + '<span></span></div>'
-        + '<div class="option">' + questions[index].options[3] + '<span></span></div>';
+    //random options shuffle
+
+    let array = questions[index].options;
+    function random() {
+        let aFloat = Math.random() * array.length;
+        let indexA = Math.floor(aFloat);
+        return indexA;
+    }
+    for (let i = 0; i < array.length; i++) {
+        let randomIndex = random();
+        [array[i], array[randomIndex]] = [array[randomIndex], array[i]];
+
+        // console.log(array);
+
+        // let question_tag = '<span>' + questions[index].question + '</span>';
+        let option_tag = '<div class="option">' + questions[index].options[0] + '<span></span></div>'
+            + '<div class="option">' + questions[index].options[1] + '<span></span ></div>'
+            + '<div class="option">' + questions[index].options[2] + '<span></span></div>'
+            + '<div class="option">' + questions[index].options[3] + '<span></span></div>';
 
 
-    question_text.innerHTML = question_tag;
-    option_list.innerHTML = option_tag;
 
-    //sececting correct answer
+        question_text.innerHTML = (`${questions[index].question}`);
+        option_list.innerHTML = option_tag;
 
-    const option = option_list.querySelectorAll(".option");
-    for (let i = 0; i < option.length; i++) {
-        option[i].setAttribute("onclick", "optionSelected(this)");
+        //sececting correct answer
 
+        const option = option_list.querySelectorAll(".option");
+        for (let i = 0; i < option.length; i++) {
+            option[i].setAttribute("onclick", "optionSelected(this)");
+
+        }
     }
 }
-
 function optionSelected(answer) {
     clearInterval(counter);
     clearInterval(progressLine);

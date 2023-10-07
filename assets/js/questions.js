@@ -44,12 +44,12 @@ let questions = [
     },
     {
         question: "Which of these properties of water makes it a good environment for living organisms?",
-        answer: "All of the Above",
+        answer: "All the options",
         options: [
             "High Latent Heat of Fusion",
             "Universal Solvent",
             "High Specific Heat Capacity",
-            "All of the Above"
+            "All the options"
         ]
     },
     {
