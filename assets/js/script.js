@@ -22,7 +22,7 @@ exit_btn.addEventListener("click", () => {
 });
 
 //shuffle array index questions so questions appear in a random order
-questions.sort(() => Math.random() - .5);
+questions.sort(() => Math.random() - '.5');
 
 begin_btn.addEventListener("click", () => {
     instructions_area.classList.remove("activeInfo");
