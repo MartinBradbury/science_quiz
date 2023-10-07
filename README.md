@@ -21,6 +21,22 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 ![Hover](assets/images/hover.png)
 ![Rules](assets/images/rules.png)
 
+### Question number in the Test Area
+*   The users will see the question number they are on and how many euestions there are in the header of their test.
+![question](assets/images/question.png)
+
+### Timer bar and number
+*   The user will see how many seconds left there are to answer the current question. This will also be displayed in a timer bar.
+![timerbar](assets/images/timerandbar.png)
+
+### Seclecting correct answer
+*   Selecting the correct answer will stop the timer and timer bar, display the answer as green and display a button to move to the next question
+![correct](assets/images/correct.png)
+
+### Incorrect answer selection
+*   Selecting an incorrect answer will stop the timer and the timer bar, display the incorrect answer selected as red and the correct answer as green.
+![incorrect](assets/images/incorrect.png)
+
 
 
 
