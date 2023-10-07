@@ -584,6 +584,12 @@ footer .next_btn:hover {
 
     }
 
+    .game_area .option_list .option {
+        padding: 5px 15px;
+        margin-bottom: 20px;
+        max-height: 100vh;
+    }
+
     .result_area {
         width: auto;
     }
