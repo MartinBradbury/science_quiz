@@ -84,16 +84,14 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 
 ## User Testing
 
-
-
 ## Lighthouse results
 
 I have used the developer tools in google chrome to test each page in my website for performance, accessibility, best practise and SEO. Below is an example of the homepage.
 
 * Mobile
-![Science Quiz Mobile](assets/images/lighthousem.png)
+![Science Quiz Mobile]()
 * Desktop
-![Science QUiz Desktop](assets/images/lighthoused.png)
+![Science QUiz Desktop]()
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
@@ -105,12 +103,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## Bugs
 
-* The font style Old Standard TT is not available on IOS mobile and tablet devices. The default - sans serif is used instead.
+
 
 # Deployment
 
-* The website has been deployed to GitHub pages.
-* The live link can be found here: 
+
 
 # Credits
 
