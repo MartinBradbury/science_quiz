@@ -142,7 +142,7 @@ function showResultArea() {
     if (userScore) {
         let scoreTag = '<span><p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
-    };
+    }
 
     //Calculate percentage function and round to whole number
 
@@ -179,7 +179,7 @@ function showResultArea() {
         let gradeTag = '<span>Grade<p>' + 'U' + '</p></span>';
         gradeText.innerHTML = gradeTag;
     }
-};
+}
 
 // top questions counter 
 function questionCounter(index) {
@@ -188,7 +188,7 @@ function questionCounter(index) {
     let totalQTag = '<span><p>' + index + '</p>of<p>' + questions.length + '</p>Questions</span>';
 
     top_q_counter.innerHTML = totalQTag;
-};
+}
 
 //timer function
 
@@ -231,5 +231,5 @@ function startTimerLine(time) {
 
         }
     }
-};
+}
 
