@@ -61,11 +61,14 @@ h1 {
     color: white
 }
 
-.start_btn:hover {
-    background: #b1d1f0;
-    color: rgb(3, 46, 103);
-    transition: all 0.3s ease;
-    box-shadow: 2px 2px black;
+@media only screen and (min-width: 600px) {
+    .start_btn:hover {
+
+        background: #b1d1f0;
+        color: rgb(3, 46, 103);
+        transition: all 0.3s ease;
+        box-shadow: 2px 2px black;
+    }
 }
 
 /* Instructions area */
@@ -142,12 +145,14 @@ h1 {
     margin-top: auto;
 }
 
-.buttons button:hover {
-    background: #b1d1f0;
-    transition: all .5s ease;
-    box-shadow: 2px 2px black;
-    color: rgb(3, 46, 103);
+@media only screen and (min-width: 600px) {
+    .buttons button:hover {
+        background: #b1d1f0;
+        transition: all .5s ease;
+        box-shadow: 2px 2px black;
+        color: rgb(3, 46, 103);
 
+    }
 }
 
 
@@ -301,12 +306,13 @@ header .total_questions span p:first-child {
 }
 
 /* option list in game area hover color */
-
-.game_area .option_list .option:hover {
-    background: rgb(3, 46, 103);
-    color: #fff;
-    transition: all 1s ease;
-    transform: scale(0.95);
+@media only screen and (min-width: 600px) {
+    .game_area .option_list .option:hover {
+        background: rgb(3, 46, 103);
+        color: #fff;
+        transition: all 1s ease;
+        transform: scale(0.95);
+    }
 }
 
 /* selecting correct answer and incorrect answer */
@@ -359,11 +365,13 @@ footer .next_btn {
     transition: all 0.5s ease;
 }
 
-footer .next_btn:hover {
-    background: #b1d1f0;
-    box-shadow: 3px 3px black;
-    color: rgb(3, 46, 103);
+@media only screen and (min-width: 600px) {
+    footer .next_btn:hover {
+        background: #b1d1f0;
+        box-shadow: 3px 3px black;
+        color: rgb(3, 46, 103);
 
+    }
 }
 
 
@@ -465,9 +473,11 @@ footer .next_btn:hover {
     padding: 5px;
 }
 
-.footer-basic #footer-li a:hover {
-    opacity: 1;
+@media only screen and (min-width: 600px) {
+    .footer-basic #footer-li a:hover {
+        opacity: 1;
 
+    }
 }
 
 .footer-basic .social {
@@ -498,10 +508,12 @@ footer .next_btn:hover {
     opacity: 0.75;
 }
 
-.footer-basic .social>a:hover {
-    opacity: 0.9;
-    transform: scale(0.9);
-    color: #0f6bc7;
+@media only screen and (min-width: 600px) {
+    .footer-basic .social>a:hover {
+        opacity: 0.9;
+        transform: scale(0.9);
+        color: #0f6bc7;
+    }
 }
 
 .footer-basic .copyright {
