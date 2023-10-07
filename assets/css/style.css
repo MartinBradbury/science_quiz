@@ -32,7 +32,7 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
 }
 
 /* set active windows */
@@ -42,7 +42,7 @@ h1 {
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
-    transform: translate(-50%, -50%) scale (1);
+    transform: translate(-50%, -50%);
 }
 
 
@@ -77,7 +77,7 @@ h1 {
     border-radius: 5px;
     background: rgb(228, 232, 250);
     pointer-events: none;
-    transform: translate(-50%, -50%) scale (0.9);
+    transform: translate(-50%, -50%);
 
 }
 
@@ -96,7 +96,6 @@ h1 {
 }
 
 .instructions_area .instructions_list .inst {
-    padding-top: 20px;
     height: 60px;
     width: 100%;
     margin: 5px 0;
@@ -538,7 +537,7 @@ footer .next_btn:hover {
         color: #707070;
         height: 2em;
         left: 0;
-        position: relative; //changed to relative from fixed also works if position is not there
+        position: relative;
         font-size: small;
         width: 100%;
     }
@@ -573,7 +572,7 @@ footer .next_btn:hover {
 
     .game_area section .question_text {
         font-size: 15px;
-        font-weight: 500px;
+        font-weight: 500;
 
     }
 
