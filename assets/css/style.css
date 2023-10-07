@@ -481,7 +481,7 @@ footer .next_btn:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Montserrat, sans-serif;
+    font-family: Lato, sans-serif;
 }
 
 .footer-basic .social>a {
@@ -513,7 +513,7 @@ footer .next_btn:hover {
 }
 
 .copyright {
-    font-family: Montserrat, sans-serif;
+    font-family: Lato, sans-serif;
 }
 
 
