@@ -69,6 +69,7 @@ function showQuestions(index) {
         let randomIndex = random();
         [array[i], array[randomIndex]] = [array[randomIndex], array[i]];
 
+        console.log(`${questions[index].options[i]}`);
         // let question_tag = '<span>' + questions[index].question + '</span>';
         let option_tag = '<div class="option">' + questions[index].options[0] + '<span></span></div>'
             + '<div class="option">' + questions[index].options[1] + '<span></span ></div>'
