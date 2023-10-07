@@ -22,10 +22,26 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 ![Rules](assets/images/rules.png)
 
 
+
+
+
+## Wireframes
+
+*	Main page:
+[Desktop](assets/images/home.png) 
+*	Instructions:
+[Desktop](assets/images/instructions.png) 
+*	Test Area:
+[Desktop](assets/images/questions.png) 
+*	Results Area:
+[Desktop](assets/images/results.png) 
+
+
 ## Languages
 
 *	[CSS](https://en.wikipedia.org/wiki/CSS)
 *	[HTML5](https://en.wikipedia.org/wiki/HTML5)
+*   [JAVASCRIPT](https://www.javascript.com/)
 
 ## Framework, Languages and Programs Used
 
