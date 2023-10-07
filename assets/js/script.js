@@ -175,7 +175,7 @@ function showResultArea() {
     } else if (result >= 30 + '%') {
         let gradeTag = '<span>Grade<p>' + 'E' + '</p></span>';
         gradeText.innerHTML = gradeTag;
-    } else if (result <= 29 + '%') {
+    } else if (result < 29 + '%') {
         let gradeTag = '<span>Grade<p>' + 'U' + '</p></span>';
         gradeText.innerHTML = gradeTag;
     }
