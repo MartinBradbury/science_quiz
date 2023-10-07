@@ -34,11 +34,12 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 ![correct](assets/images/correct.png)
 
 ### Incorrect answer selection
-*   Selecting an incorrect answer will stop the timer and the timer bar, display the incorrect answer selected as red and the correct answer as green.
+*   Selecting an incorrect answer will stop the timer and the timer bar, display the incorrect answer selected as red and the correct answer green.
 ![incorrect](assets/images/incorrect.png)
 
-
-
+### Results Area
+*   The results area will show the total number of questions correfct, calculate the percentage and use the percentage to generate a grede for the user based on OCR Alevel Biology Grade boundries.
+![results](assets/images/resultsarea.png)
 
 
 ## Wireframes
