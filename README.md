@@ -28,13 +28,13 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 ## Wireframes
 
 *	Main page:
-[Desktop](assets/images/home.png) 
+[Design](assets/images/home.png) 
 *	Instructions:
-[Desktop](assets/images/instructions.png) 
+[Design](assets/images/instructions.png) 
 *	Test Area:
-[Desktop](assets/images/questions.png) 
+[Design](assets/images/questions.png) 
 *	Results Area:
-[Desktop](assets/images/results.png) 
+[Design](assets/images/results.png) 
 
 
 ## Languages
