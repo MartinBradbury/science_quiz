@@ -106,7 +106,7 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 
 *   [Javascript:](https://jshint.com/)
     *   No effors were found when testing with the JSHunt Validator. [JSValidator]
-        *   the following meterics were returned:
+        * The following meterics were returned:
         * There are 16 functions in this file.
         * Function with the largest signature take 2 arguments, while the median is 0.
         * Largest function has 26 statements in it, while the median is 3.
@@ -121,9 +121,9 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 I have used the developer tools in google chrome to test each page in my website for performance, accessibility, best practise and SEO. Below is an example of the homepage.
 
 * Mobile
-![Science Quiz Mobile]()
+![Science Test Mobile](assets/images/lhmob.png)
 * Desktop
-![Science QUiz Desktop]()
+![Science QUiz Desktop](assets/images/lhdesk.png)
 
 
 # Deployment
