@@ -12,7 +12,7 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 *   Header element detailing the quiz title and a interactive footer that will direct users to my social media sites.
 
 ![Header](assets/images/header.webp)
-![Footer](assets/images/footer.pebp)
+![Footer](assets/images/footer.webp)
 
 ### Interactive Start Button
 *   The users will be greated on the home page with a interactive start button that has a hover effect and opens up the rules window when clicked.
@@ -123,9 +123,9 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 I have used the developer tools in google chrome to test each page in my website for performance, accessibility, best practise and SEO. Below is an example of the homepage.
 
 * Mobile
-![Science Test Mobile](assets/images/lhmob.png)
+![Science Test Mobile](assets/images/lhmobile.webp)
 * Desktop
-![Science QUiz Desktop](assets/images/lhdesk.png)
+![Science QUiz Desktop](assets/images/lhdesk.webp)
 
 
 # Deployment
