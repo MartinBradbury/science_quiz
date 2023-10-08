@@ -549,6 +549,14 @@ footer .next_btn {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+    .heading h1 {
+        font-size: 40px;
+    }
+
+    .heading h2 {
+        font-size: 25px;
+    }
+
     /* Hide Header and Footer */
     .header_main.activeHeader {
         display: none;
@@ -596,10 +604,14 @@ footer .next_btn {
         height: 60px;
     }
 
+    .buttons .quit {
+        margin-top: 30px;
+    }
+
     .buttons button {
         height: 50px;
-        font-size: 15px;
         margin: 5px 30px;
+        padding: 10px 30px 15px 30px;
     }
 
     h1 {
