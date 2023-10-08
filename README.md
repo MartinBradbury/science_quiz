@@ -51,6 +51,14 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 ![answers](assets/images/anschange.png)
 ![answers](assets/images/anschange2.png)
 
+## Features Left To Implement and Future Development
+### Below are features that I would like to integrate into the project:
+*   Greater selection of questions and / or the use of an API to generate the questions.
+*   Submit test result section. This will be very useful as a teacher if the students are able to submit their answers dirtectly to me and those answers could be tabilated.
+*   Multiple topics for the suudents to choose from throughout the whole A level Biology specification.
+*   Level of difficulty questions that the student can select which will inturn dictate the damand of the questions being asked.
+*   Responsive test design which selects the next question based on the success of the student in the provious few questions.
+
 ## Wireframes
 
 *	Main page:
