@@ -99,10 +99,12 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 ## Validator testing:
 
 * [HTML:](https://validator.w3.org/)
-    *   No errors were found when testing with the W3C HTML Validator [HTMLResult]
+    *   No errors were found when testing with the W3C HTML Validator. 
+![HTMLResult](assets/images/htmlval.webp)
 
 *   [CSS:](https://validator.w3.org/)
-    *   No errors were found when testing with the W3C CSS Validator. ![CSSResults](assets/images/cssval.png)
+    *   No errors were found when testing with the W3C CSS Validator. 
+![CSSResults](assets/images/cssval.png)
 
 *   [Javascript:](https://jshint.com/)
     *   No effors were found when testing with the JSHunt Validator. [JSValidator]
