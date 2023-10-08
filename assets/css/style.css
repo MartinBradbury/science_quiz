@@ -12,17 +12,29 @@ body {
     background: #b1d1f0;
 }
 
-h1 {
+h1,
+h2 {
     color: rgb(3, 46, 103);
     text-align: center;
 }
+
 
 .heading {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background: #b1d1f0;
     padding: 30px;
+}
+
+.heading h1 {
+    font-size: 50px;
+}
+
+.heading h2 {
+    font-size: 30px;
+    padding-top: 10px;
 }
 
 /* Positioning of all major elements(start button, rules area, quiz area and results area */
