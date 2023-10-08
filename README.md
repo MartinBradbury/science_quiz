@@ -41,6 +41,10 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 *   The results area will show the total number of questions correfct, calculate the percentage and use the percentage to generate a grede for the user based on OCR Alevel Biology Grade boundries.
 ![results](assets/images/resultsarea.png)
 
+### Random Question Order Generation
+*   The 20 questions in the quiz appear in a random order every time the test is attempted to ensure the user does not just learn the sequence of answers.
+![questions](assets/images/queschange.png) ![questions](assets/images/queschange2.png)
+
 
 ## Wireframes
 
