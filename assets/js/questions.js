@@ -23,12 +23,12 @@ let questions = [
     },
     {
         question: " which part of the water molecule has a slightly negative charge?",
-        answer: "Oxygen",
+        answer: "Oxygen Element",
         options: [
             "Hydrogen Bonds",
-            "Oxygen",
+            "Oxygen Element",
             "Covalent Bonds",
-            "Hydrogen"
+            "Hydrogen Element"
         ]
     },
 
@@ -64,10 +64,10 @@ let questions = [
     },
     {
         question: "What are the 3 roles of Carbohydrates in organisms?",
-        answer: "Storage, Energy Source, Structure",
+        answer: "Storage, Source and Structure",
         options: [
-            "Storage, Energy Source and Transport",
-            "Storage, Energy Source, Structure",
+            "Storage, Source and Transport",
+            "Storage, Source and Structure",
             "Energy Source only ",
             "Energy Source and Structure"
         ]
@@ -164,10 +164,10 @@ let questions = [
     },
     {
         question: "What isomer of Glucose is used to form Starch?",
-        answer: "Alpha Glucose",
+        answer: "α-Glucose",
         options: [
-            "Alpha Glucose",
-            "Beta Glucose",
+            "α-Glucose",
+            "β-Glucose",
             "Triosephosphate",
             "Ribose"
         ]
