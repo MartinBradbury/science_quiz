@@ -114,8 +114,7 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
         * The most complex function has a cyclomatic complexity value of 8 while the median is 1.
 
 ### Unfixed Bugs
-*   On desktop, selecting a different browser tag during the test correctly continues the count down but the timer bar pauses. When the test tab is reselected, timer is correct but timerbar is not.
-
+*   On desktop devices: Tabbing out of the test once started loses the window focus. This causes the timerbar to stop counting down. The numbers work correctly. This will be corrected in the future by ensuring when the test has started, the window is always the focus even if tabbed out.
 
 ## Lighthouse results
 
