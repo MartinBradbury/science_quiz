@@ -540,10 +540,14 @@ footer .next_btn {
         display: none;
     }
 
+    .footer_basic {
+        bottom: 10%;
+    }
+
     /* Instructions area */
     .instructions_area {
         width: 90%;
-        padding: 5px;
+        padding: 0px 20px;
     }
 
     .begin_btn {
