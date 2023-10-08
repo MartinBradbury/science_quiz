@@ -219,13 +219,13 @@ function startTimer(time) {
             for (let i = 0; i < allOptions; i++) {
                 option_list.children[i].classList.add("disabled");
             }
+
             //next button appears when answer selected
             next_btn.style.display = "block";
         }
     }
 }
 // Progress bar function 
-
 function startTimerLine(time) {
     progressLine = setInterval(timer, 160);
     time = 100;
