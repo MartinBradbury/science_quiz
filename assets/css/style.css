@@ -264,7 +264,7 @@ header .total_questions span p:first-child {
 
 /* Quiz section styling */
 
-.game_area section {
+.game_area .play_area {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -273,7 +273,7 @@ header .total_questions span p:first-child {
     background: rgb(228, 232, 250);
 }
 
-.game_area section .question_text {
+.game_area .play_area .question_text {
     font-size: 25px;
     font-weight: 600;
     text-align: center;
@@ -281,7 +281,7 @@ header .total_questions span p:first-child {
 
 }
 
-.game_area section .option_list {
+.game_area .play_area .option_list {
     padding: 20px 0;
     display: block;
     width: 40%;
@@ -586,17 +586,17 @@ footer .next_btn {
         width: 95%;
     }
 
-    .game_area section {
+    .game_area .play_area {
         padding: 0px;
     }
 
-    .game_area section .question_text {
+    .game_area .play_area .question_text {
         font-size: 15px;
         font-weight: 500;
 
     }
 
-    .game_area section .option_list {
+    .game_area .play_area .option_list {
         padding: 0px 0px 15px 0px;
     }
 
