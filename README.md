@@ -128,7 +128,21 @@ I have used the developer tools in google chrome to test each page in my website
 
 # Deployment
 
+*   The website has been deployed to GitHub pages. This was acomplished by following the detailed steps below:
+*   selecting settings in the github repositivry.
+![selectsettings](assets/images/selectsettings.webp)
 
+*  Navigate to the Pages tab on the left hand side of the screen.
+![pagestab](assets/images/pagestab.webp)
+
+*  Select deploy from branch in the source section and sesure the main branch is selected in the branch.
+![deploy](assets/images/deploy.webp)
+
+*   Finally click the save button and the page will be deployed to GitHub Pages.
+![save](assets/images/save.webp)
+
+*   Once the website has been updated to the server, you will see your live URL link.
+![live](assets/images/live.webp)
 
 # Credits
 
