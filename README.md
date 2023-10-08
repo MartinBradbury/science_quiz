@@ -43,13 +43,13 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 
 ### Random Question Order Generation
 *   The 20 questions in the quiz appear in a random order every time the test is attempted to ensure the user does not just learn the sequence of answers.
-![questions](assets/images/queschange.png) 
-![questions](assets/images/queschange2.png)
+![questions](assets/images/queschange.webp) 
+![questions](assets/images/queschange2.webp)
 
 ### Random Answer Order Generation
 *   The answers will appear in a random order for each question every time the test is appenpted. This ensures the user does not just learn the sequence of answers.
-![answers](assets/images/anschange.png)
-![answers](assets/images/anschange2.png)
+![answers](assets/images/anschange.webp)
+![answers](assets/images/anschange2.webp)
 
 ## Features Left To Implement and Future Development
 ### Below are features that I would like to integrate into the project:
