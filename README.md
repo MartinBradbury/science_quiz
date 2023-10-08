@@ -93,8 +93,7 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 
 # Testing
 
-## User Testing
-*   The website and interactive quiz has been tested by me using google chrome developer tools, Iphone 14 Pro / Iphone 13 mini and Apple Ipad Pro 12.9. After deploying the website to GitHub pages the website has been tested by friends, family and students at my school to see how it works both on a desktop computer and the variety of mobile devices they own.
+*   The website and interactive quiz has been tested by myself using google chrome developer tools, Iphone 14 Pro / Iphone 13 mini and Apple Ipad Pro 12.9. These tests have taken place on the hosted server during development and on the deployed site on GitHub Pages. After deploying the website to GitHub pages the website was further tested by friends, family and students at my school to check its UX and functionality on both desktop computers and the variety of mobile devices.
 
 ## Validator testing:
 
