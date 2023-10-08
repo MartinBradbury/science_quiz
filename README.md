@@ -1,6 +1,6 @@
 # A Level Biology: Biological Molecules Test
 
-![A Level Biology: Biological Molecules Test](assets/images/responsive.png)
+![A Level Biology: Biological Molecules Test](assets/images/responsive.webp)
 
 This interavtive A Level Biology Biological Molecules test is aimed at Year 12 and 13 students who want to test their knowledge on the topic of Biological Molecules. The test will consist of 20 questions and will test the users knowledge across Carbohydrates, Lipids and Water. The user will be faced with a questions in a random order and 4 possible options to selext from. Once selected the user will get instant feedback if they are correct or incorrect. If incorrect the correct answer will be displayed. FOr each question the user will get a maximum of 15 seconds to respond and this will be displayed as a number counting down and a timer bar that will decrease as the time progresses. At the end of the test the user will be able to see how many answers they got correct, what their perfentage is and a conversion of thet percentage into a grade based on typical A Level grade boundaries.
 
@@ -11,35 +11,35 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 ### Header and Footer
 *   Header element detailing the quiz title and a interactive footer that will direct users to my social media sites.
 
-![Header](assets/images/header.png)
-![Footer](assets/images/footer.png)
+![Header](assets/images/header.webp)
+![Footer](assets/images/footer.pebp)
 
 ### Interactive Start Button
 *   The users will be greated on the home page with a interactive start button that has a hover effect and opens up the rules window when clicked.
 
-![Start](assets/images/start.png)  
-![Hover](assets/images/hover.png)
-![Rules](assets/images/rules.png)
+![Start](assets/images/start.webp)  
+![Hover](assets/images/hover.webp)
+![Rules](assets/images/rules.webp)
 
 ### Question number in the Test Area
 *   The users will see the question number they are on and how many euestions there are in the header of their test.
-![question](assets/images/question.png)
+![question](assets/images/question.webp)
 
 ### Timer bar and number
 *   The user will see how many seconds left there are to answer the current question. This will also be displayed in a timer bar.
-![timerbar](assets/images/timerandbar.png)
+![timerbar](assets/images/timerandbar.webp)
 
 ### Seclecting correct answer
 *   Selecting the correct answer will stop the timer and timer bar, display the answer as green and display a button to move to the next question
-![correct](assets/images/correct.png)
+![correct](assets/images/correct.webp)
 
 ### Incorrect answer selection
 *   Selecting an incorrect answer will stop the timer and the timer bar, display the incorrect answer selected as red and the correct answer green.
-![incorrect](assets/images/incorrect.png)
+![incorrect](assets/images/incorrect.webp)
 
 ### Results Area
 *   The results area will show the total number of questions correfct, calculate the percentage and use the percentage to generate a grede for the user based on OCR Alevel Biology Grade boundries.
-![results](assets/images/resultsarea.png)
+![results](assets/images/resultsarea.webp)
 
 ### Random Question Order Generation
 *   The 20 questions in the quiz appear in a random order every time the test is attempted to ensure the user does not just learn the sequence of answers.
@@ -62,13 +62,13 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 ## Wireframes
 
 *	Main page:
-[Design](assets/images/home.png) 
+[Design](assets/images/home.webp) 
 *	Instructions:
-[Design](assets/images/instructions.png) 
+[Design](assets/images/instructions.webp) 
 *	Test Area:
-[Design](assets/images/questions.png) 
+[Design](assets/images/questions.webp) 
 *	Results Area:
-[Design](assets/images/results.png) 
+[Design](assets/images/results.webp) 
 
 
 ## Framework, Languages and Programs Used
