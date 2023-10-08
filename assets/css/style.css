@@ -78,7 +78,7 @@ h2 {
         background: #b1d1f0;
         color: rgb(3, 46, 103);
         transition: all 0.3s ease;
-        box-shadow: 2px 2px black;
+        box-shadow: 8px 8px 8px black;
     }
 }
 
@@ -160,7 +160,7 @@ h2 {
     .buttons button:hover {
         background: #b1d1f0;
         transition: all .5s ease;
-        box-shadow: 2px 2px black;
+        box-shadow: 8px 8px 8px black;
         color: rgb(3, 46, 103);
 
     }
@@ -178,7 +178,7 @@ h2 {
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 10px 10px 15px black;
 }
 
 /* Game area header question number */
@@ -385,7 +385,7 @@ footer .next_btn {
 @media only screen and (min-width: 600px) {
     footer .next_btn:hover {
         background: #b1d1f0;
-        box-shadow: 3px 3px black;
+        box-shadow: 8px 8px 8px black;
         color: rgb(3, 46, 103);
 
     }
@@ -614,6 +614,7 @@ footer .next_btn {
 
     .game_area {
         width: 95%;
+        box-shadow: 2px 2px 2px black;
     }
 
     .game_area .play_area {
