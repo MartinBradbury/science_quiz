@@ -192,9 +192,7 @@ function showResultArea() {
 // top questions counter 
 function questionCounter(index) {
     const top_q_counter = game_area.querySelector(".total_questions");
-
-    let totalQTag = '<span><p>' + index + '</p>of<p>' + questions.length + '</p>Questions</span>';
-
+    let totalQTag = (`<span><p> ${index} </p>of<p> ${questions.length} </p>Questions</span>`);
     top_q_counter.innerHTML = totalQTag;
 }
 
