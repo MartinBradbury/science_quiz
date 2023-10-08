@@ -47,7 +47,6 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-
 /* Start Button Styling */
 .start_btn {
     font-size: 30px;
@@ -447,7 +446,7 @@ footer .next_btn {
 
 /*Footer styling*/
 
-.footer-basic {
+.footer_basic {
     position: absolute;
     bottom: 0%;
     width: 100%;
@@ -456,7 +455,7 @@ footer .next_btn {
     color: rgb(3, 46, 103);
 }
 
-.footer-basic #footer-li {
+.footer_basic #footer-li {
     padding: 0 10px;
     list-style: none;
     text-align: center;
@@ -466,7 +465,7 @@ footer .next_btn {
 }
 
 
-.footer-basic #footer-li a {
+.footer_basic #footer-li a {
     color: rgb(3, 46, 103);
     text-decoration: none;
     opacity: 1;
@@ -474,13 +473,13 @@ footer .next_btn {
 }
 
 @media only screen and (min-width: 600px) {
-    .footer-basic #footer-li a:hover {
+    .footer_basic #footer-li a:hover {
         opacity: 1;
 
     }
 }
 
-.footer-basic .social {
+.footer_basic .social {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -494,7 +493,7 @@ footer .next_btn {
     font-family: Lato, sans-serif;
 }
 
-.footer-basic .social>a {
+.footer_basic .social>a {
     font-size: 24px;
     width: 40px;
     height: 38px;
@@ -509,14 +508,14 @@ footer .next_btn {
 }
 
 @media only screen and (min-width: 600px) {
-    .footer-basic .social>a:hover {
+    .footer_basic .social>a:hover {
         opacity: 0.9;
         transform: scale(0.9);
         color: #0f6bc7;
     }
 }
 
-.footer-basic .copyright {
+.footer_basic .copyright {
     margin-top: 15px;
     text-align: center;
     font-size: 13px;
@@ -531,6 +530,15 @@ footer .next_btn {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+    /* Hide Header and Footer */
+    .header_main.activeHeader {
+        display: none;
+    }
+
+    .footer_basic.activeFooter {
+        display: none;
+    }
 
     /* Instructions area */
     .instructions_area {

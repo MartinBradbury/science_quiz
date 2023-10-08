@@ -10,11 +10,15 @@ const option_list = document.querySelector(".option_list");
 const timer_num = document.querySelector(".progress_text");
 const time_line = document.querySelector(".progress_bar");
 const result_area = document.querySelector(".result_area");
+const header_main = document.querySelector(".header_main");
+const footer_basic = document.querySelector(".footer_basic");
 
 // If the start button is clicked
 
 start_btn.addEventListener("click", () => {
     instructions_area.classList.add("activeInfo");
+    header_main.classList.add("activeHeader");
+    footer_basic.classList.add("activeFooter");
 });
 
 exit_btn.addEventListener("click", () => {
@@ -28,6 +32,8 @@ questions.sort(() => Math.random() - '.5');
 begin_btn.addEventListener("click", () => {
     instructions_area.classList.remove("activeInfo");
     game_area.classList.add("activeGame");
+    header_main.classList.add("activeHeader");
+    footer_basic.classList.add("activeFooter");
     showQuestions(0);
     questionCounter(1);
     startTimer(15);
