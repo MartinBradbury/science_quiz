@@ -71,12 +71,6 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 [Design](assets/images/results.png) 
 
 
-## Languages
-
-*	[CSS](https://en.wikipedia.org/wiki/CSS)
-*	[HTML5](https://en.wikipedia.org/wiki/HTML5)
-*   [JAVASCRIPT](https://www.javascript.com/)
-
 ## Framework, Languages and Programs Used
 
 1. [Bootstrap 4.1](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
@@ -100,6 +94,25 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 # Testing
 
 ## User Testing
+*   The website and interactive quiz has been tested by me using google chrome developer tools, Iphone 14 Pro / Iphone 13 mini and Apple Ipad Pro 12.9. After deploying the website to GitHub pages the website has been tested by friends, family and students at my school to see how it works both on a desktop computer and the variety of mobile devices they own.
+
+## Validator testing:
+*   HTML:
+    *   No errors were found when testing with the W3C HTML Validator [HTMLResult]
+
+*   CSS:
+    *   No errors were found when testing with the W3C CSS Validator. [CSSResults]
+
+*   Javascript:
+    *   No effors were found when testing with the JSHunt Validator. [JSValidator]
+        *   the following meterics were returned:
+        * insert metrics   
+        * insert metrics
+
+
+### Unfixed Bugs
+*   Unfixed bugs to be added here
+
 
 ## Lighthouse results
 
@@ -109,17 +122,6 @@ I have used the developer tools in google chrome to test each page in my website
 ![Science Quiz Mobile]()
 * Desktop
 ![Science QUiz Desktop]()
-
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
-
-* [W3C Markup Validator]()
-
-* [W3C CSS Validator]()
-
-* [Javascript Validator]()
-
-## Bugs
-
 
 
 # Deployment
