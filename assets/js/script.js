@@ -14,7 +14,7 @@ const result_area = document.querySelector(".result_area");
 // If the start button is clicked
 
 start_btn.addEventListener("click", () => {
-    instructions_area.classList.add("activeInfo"); //Shows instructions on click
+    instructions_area.classList.add("activeInfo");
 });
 
 exit_btn.addEventListener("click", () => {
@@ -24,6 +24,7 @@ exit_btn.addEventListener("click", () => {
 //shuffle array index questions so questions appear in a random order
 questions.sort(() => Math.random() - '.5');
 
+//Event listener to remove instructions and add game area and reset timers
 begin_btn.addEventListener("click", () => {
     instructions_area.classList.remove("activeInfo");
     game_area.classList.add("activeGame");
@@ -41,24 +42,23 @@ let timeValue = 15;
 let progressLine;
 let userScore = 0;
 
+//Next button in the test
 const next_btn = document.querySelector(".next_btn");
+
+//restart the test button appearing on the results page
 const quit = document.querySelector(".quit");
 
-// Reloads the window on quit quiz button click
-
+// Reloads the window on restart test button click
 quit.addEventListener("click", () => {
     window.location.reload();
 });
 
 // getting the questions from array
-
-
 function showQuestions(index) {
     const question_text = document.querySelector(".question_text");
     const option_list = document.querySelector(".option_list");
 
     //random options shuffle
-
     let array = questions[index].options;
     function random() {
         let aFloat = Math.random() * array.length;
@@ -68,28 +68,24 @@ function showQuestions(index) {
     for (let i = 0; i < array.length; i++) {
         let randomIndex = random();
         [array[i], array[randomIndex]] = [array[randomIndex], array[i]];
-
-        console.log(`${questions[index].options[i]}`);
-        // let question_tag = '<span>' + questions[index].question + '</span>';
         let option_tag = (`<div class="option">${questions[index].options[0]}<span></span ></div>`) +
             (`<div class="option">${questions[index].options[1]}<span></span ></div>`) +
             (`<div class="option">${questions[index].options[2]}<span></span ></div>`) +
             (`<div class="option">${questions[index].options[3]}<span></span ></div>`);
 
-
-
+        //Writing the question and answers into the HTML
         question_text.innerHTML = (`${questions[index].question}`);
         option_list.innerHTML = option_tag;
 
         //sececting correct answer
-
         const option = option_list.querySelectorAll(".option");
         for (let i = 0; i < option.length; i++) {
             option[i].setAttribute("onclick", "optionSelected(this)");
-
         }
     }
 }
+
+//selecting an answer correct / incorrect
 function optionSelected(answer) {
     clearInterval(counter);
     clearInterval(progressLine);
@@ -116,7 +112,6 @@ function optionSelected(answer) {
     }
 
     // if incorrect answer, show all correct answers
-
     for (let i = 0; i < allOptions; i++) {
         option_list.children[i].classList.add("disabled");
     }
@@ -124,7 +119,6 @@ function optionSelected(answer) {
 }
 
 //Next Button on click
-
 next_btn.addEventListener("click", () => {
     if (question_count < questions.length - 1) {
         question_count++;
@@ -133,8 +127,8 @@ next_btn.addEventListener("click", () => {
         questionCounter(question_number);
         clearInterval(counter);
         startTimer(timeValue);
-        clearInterval(progressLine); //Counter Line
-        startTimerLine(widthValue); //start counter line width
+        clearInterval(progressLine);
+        startTimerLine(widthValue);
         next_btn.style.display = "none";
 
 
@@ -145,17 +139,16 @@ next_btn.addEventListener("click", () => {
     }
 });
 
-//Results area Function
-
+//Results area Function and add active results window
 function showResultArea() {
-    instructions_area.classList.remove("activeInfo"); //hide instructions window
-    game_area.classList.remove("activeGame"); // hide quiz window
-    result_area.classList.add("activeResult"); //show results window
+    instructions_area.classList.remove("activeInfo");
+    game_area.classList.remove("activeGame");
+    result_area.classList.add("activeResult");
 
     const scoreText = result_area.querySelector(".score_value");
 
     if (userScore) {
-        let scoreTag = '<span><p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
+        let scoreTag = (`<span><p> ${userScore} </p> out of <p> ${questions.length}</p></span>`);
         scoreText.innerHTML = scoreTag;
     }
 
@@ -169,29 +162,29 @@ function showResultArea() {
     let result = percentage(userScore, questions.length) + "%";
     const percentText = document.querySelector(".percentage");
 
-    let percentTag = '<span>Percentage<p>' + result + '</p><span>';
+    let percentTag = (`<span>Percentage<p> ${result} </p><span>`);
     percentText.innerHTML = percentTag;
 
     //Generaging a grade from the users percentage
     const gradeText = document.querySelector(".grade");
 
     if (result >= 70 + '%') {
-        let gradeTag = '<span>Grade<p>' + 'A' + '</p></span>';
+        let gradeTag = (`<span>Grade<p> ${'A'} </p></span>`);
         gradeText.innerHTML = gradeTag;
     } else if (result >= 60 + '%') {
-        let gradeTag = '<span>Grade<p>' + 'B' + '</p></span>';
+        let gradeTag = (`<span>Grade<p> ${'B'} </p></span>`);
         gradeText.innerHTML = gradeTag;
     } else if (result >= 50 + '%') {
-        let gradeTag = '<span>Grade<p>' + 'C' + '</p></span>';
+        let gradeTag = (`<span>Grade<p> ${'C'} </p></span>`);
         gradeText.innerHTML = gradeTag;
     } else if (result >= 40 + '%') {
-        let gradeTag = '<span>Grade<p>' + 'D' + '</p></span>';
+        let gradeTag = (`<span>Grade<p> ${'D'} </p></span>`);
         gradeText.innerHTML = gradeTag;
     } else if (result >= 30 + '%') {
-        let gradeTag = '<span>Grade<p>' + 'E' + '</p></span>';
+        let gradeTag = (`<span>Grade<p> ${'E'} </p></span>`);
         gradeText.innerHTML = gradeTag;
     } else if (result < 29 + '%') {
-        let gradeTag = '<span>Grade<p>' + 'U' + '</p></span>';
+        let gradeTag = (`<span>Grade<p> ${'U'} </p></span>`);
         gradeText.innerHTML = gradeTag;
     }
 }
