@@ -4,6 +4,32 @@
 
 This interavtive A Level Biology Biological Molecules test is aimed at Year 12 and 13 students who want to test their knowledge on the topic of Biological Molecules. The test will consist of 20 questions and will test the users knowledge across Carbohydrates, Lipids and Water. The user will be faced with a questions in a random order and 4 possible options to selext from. Once selected the user will get instant feedback if they are correct or incorrect. If incorrect the correct answer will be displayed. FOr each question the user will get a maximum of 15 seconds to respond and this will be displayed as a number counting down and a timer bar that will decrease as the time progresses. At the end of the test the user will be able to see how many answers they got correct, what their perfentage is and a conversion of thet percentage into a grade based on typical A Level grade boundaries.
 
+# Contents
+
+- [A Level Biology: Biological Molecules Test](#a-level-biology-biological-molecules-test)
+- [Contents](#contents)
+- [Features](#features)
+  - [Existing Features:](#existing-features)
+    - [Header and Footer](#header-and-footer)
+    - [Interactive Start Button](#interactive-start-button)
+    - [Question number in the Test Area](#question-number-in-the-test-area)
+    - [Timer bar and number](#timer-bar-and-number)
+    - [Seclecting correct answer](#seclecting-correct-answer)
+    - [Incorrect answer selection](#incorrect-answer-selection)
+    - [Results Area](#results-area)
+    - [Random Question Order Generation](#random-question-order-generation)
+    - [Random Answer Order Generation](#random-answer-order-generation)
+  - [Features Left To Implement and Future Development](#features-left-to-implement-and-future-development)
+    - [Below are features that I would like to integrate into the project:](#below-are-features-that-i-would-like-to-integrate-into-the-project)
+  - [Wireframes](#wireframes)
+  - [Framework, Languages and Programs Used](#framework-languages-and-programs-used)
+- [Testing](#testing)
+  - [Validator testing:](#validator-testing)
+    - [Unfixed Bugs](#unfixed-bugs)
+  - [Lighthouse results](#lighthouse-results)
+- [Deployment](#deployment)
+- [Credits](#credits)
+
 # Features
 
 ## Existing Features:
