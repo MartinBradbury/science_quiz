@@ -25,8 +25,10 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
   - [Framework, Languages and Programs Used](#framework-languages-and-programs-used)
 - [Testing](#testing)
   - [Validator testing:](#validator-testing)
-    - [Unfixed Bugs](#unfixed-bugs)
+  - [Unfixed Bugs](#unfixed-bugs)
   - [Lighthouse results](#lighthouse-results)
+  - [Responsiveness](#responsiveness)
+  - [Features Tested](#features-tested)
 - [Deployment](#deployment)
 - [Credits](#credits)
 
@@ -119,7 +121,7 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 
 # Testing
 
-*   The website and interactive quiz has been tested by myself using google chrome developer tools, Iphone 14 Pro / Iphone 13 mini and Apple Ipad Pro 12.9. These tests have taken place on the hosted server during development and on the deployed site on GitHub Pages. After deploying the website to GitHub pages the website was further tested by friends, family and students at my school to check its UX and functionality on both desktop computers and the variety of mobile devices.
+*   The website and interactive quiz has been tested through the following methods below. These tests have taken place on the hosted server during development and on the deployed site on GitHub Pages. After deploying the website to GitHub pages the website was further tested by friends, family and students at my school to check its UX and functionality on both desktop computers and the variety of mobile devices.
 
 ## Validator testing:
 
@@ -139,17 +141,50 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
         * Largest function has 26 statements in it, while the median is 3.
         * The most complex function has a cyclomatic complexity value of 8 while the median is 1.
 
-### Unfixed Bugs
+## Unfixed Bugs
 *   On desktop devices: Tabbing out of the test once started loses the window focus. This causes the timerbar to stop counting down. The numbers work correctly. This will be corrected in the future by ensuring when the test has started, the window is always the focus even if tabbed out.
 
 ## Lighthouse results
 
-I have used the developer tools in google chrome to test each page in my website for performance, accessibility, best practise and SEO. Below is an example of the homepage.
+*   I have used the developer tools in google chrome to test each page in my website for performance, accessibility, best practise and SEO. Below is an example of the homepage.
 
 * Mobile
 ![Science Test Mobile](assets/images/lhmobile.webp)
 * Desktop
 ![Science QUiz Desktop](assets/images/lhdesk.webp)
+
+## Responsiveness
+*   In order to fully test the responsiveness of the web application I performed further tests on different devices and browsers. These were:
+    * Browsers:
+      * Google Chrome
+      * Safari
+      * MS Edge
+      * FireFox
+
+    * Devices:
+      * Iphone 14pro
+      * Iphone 12 Mini
+      * Ipad Pro 12.9inc
+      * Mac Laptop
+      * Windows desktop PC
+      * Windows Laptop
+
+## Features Tested
+
+| Feature      | Expected Outcome | Testing Performed    | Result | Pass or Fail |
+|   :---       |      :----:      |        :----:        | :----: |    :----:    
+| Start Button  | When clicked <br> test instructions <br> appear. | Clicked Start | Instructions shown   | Pass        |
+| Quit Quiz Button  | When clicked <br> the Test ends <br> takes user to start. <br> | Clicked Quit | Navigate to start   | Pass        |
+| Start Test Button | When clicked <br> Test window shown <br> the test begins <br> | Clicked Start | Test begins  | Pass        |
+| Question Number | When test begins <br> question number displayed <br> counts up as you progress questions.| Moved through questions | Number counts up | Pass        |
+| Timer Bar | When test begins <br> timer bar decreases. <br>  | Timer bar decreases | Pass        |
+| Timer     | When test begind <br> timer decreases from 15 <br> down to 0. | Timer decreases  | Pass    |
+| No answer selected | If no answer is <br> selected when timer <br> ends, correct answer <br> shown and no score acquired. | Did not select and answer | No point awarded and <br> correct answer shown | Pass    |
+| Next Button | When test begins the <br> next button will only display when <br> an answer is selected <br> and when clicked takes <br> user to next questions. | Clicked answer | Next button appears and takes <br> user to next questions | Pass   |
+| Results Window | After completing the Test <br> the results window will show. | Completed all questions | Results window shown | Pass    |
+| Results Data | Results window shows total score <br> Percentage achieved and <br> what grade achieved. | Completed questions to get different scores | Correct score, percentage and <br> grade shown | Pass    |
+|Restart Button | Click button to restart Test | Clicked restart | Test restarts | Pass  |
+Social Media | Click social media icons takes <br> user to social media site. | Clicked social media icons. | Navigated to social media. | Pass  |
 
 
 # Deployment
