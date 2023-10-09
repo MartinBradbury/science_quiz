@@ -74,7 +74,6 @@ h2 {
 
 @media only screen and (min-width: 800px) {
     .start_btn:hover {
-
         background: #b1d1f0;
         color: rgb(3, 46, 103);
         transition: all 0.3s ease;
@@ -94,7 +93,6 @@ h2 {
     background: rgb(228, 232, 250);
     pointer-events: none;
     transform: translate(-50%, -50%);
-
 }
 
 .instructions_area .instructions_heading {
@@ -117,7 +115,6 @@ h2 {
     margin: 5px 0;
     font-size: 20px;
     color: rgb(3, 46, 103);
-
 }
 
 .instructions_area span {
@@ -127,14 +124,12 @@ h2 {
 }
 
 .buttons {
-
     height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 35px;
     border-top: 1px solid lightgrey;
-
 }
 
 .buttons button {
@@ -162,16 +157,12 @@ h2 {
         transition: all .5s ease;
         box-shadow: 8px 8px 8px black;
         color: rgb(3, 46, 103);
-
     }
 }
-
-
 
 /* Game Area */
 
 .game_area {
-
     min-width: 60%;
     background: rgb(228, 232, 250);
     border-radius: 5px;
@@ -182,7 +173,6 @@ h2 {
 }
 
 /* Game area header question number */
-
 .game_area header {
     display: flex;
     align-items: center;
@@ -199,7 +189,6 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .game_area header .title {
@@ -209,20 +198,16 @@ h2 {
     margin-top: 20px;
 }
 
-
-
 .game_area header .total_questions span {
     display: flex;
     user-select: none;
     font-size: 20px;
     font-weight: 600;
-
 }
 
 header .total_questions span p {
     font-weight: 500;
     padding: 0px 5px;
-
 }
 
 header .total_questions span p:first-child {
@@ -231,7 +216,6 @@ header .total_questions span p:first-child {
 
 
 /* timer line styling*/
-
 .time_line {
     width: 100%;
     height: 100px;
@@ -259,7 +243,6 @@ header .total_questions span p:first-child {
     height: 100%;
     background: linear-gradient(to left, #b1d1f0, rgb(3, 46, 103));
     transition: width 0.25s ease;
-
 }
 
 
@@ -289,7 +272,6 @@ header .total_questions span p:first-child {
     font-weight: 600;
     text-align: center;
     margin-bottom: 30px;
-
 }
 
 .game_area .play_area .option_list {
@@ -298,7 +280,6 @@ header .total_questions span p:first-child {
     align-items: center;
     justify-content: space-evenly;
     padding: 10px;
-    /* width: 40%; */
 }
 
 .game_area .option_list .option {
@@ -335,7 +316,6 @@ header .total_questions span p:first-child {
 }
 
 /* selecting correct answer and incorrect answer */
-
 .option_list .option.correct {
     color: #175e1a;
     background: #64ad75;
@@ -352,9 +332,7 @@ header .total_questions span p:first-child {
     pointer-events: none;
 }
 
-
 /* Game area Footer question and questions total in header*/
-
 .game_area footer {
     height: 60px;
     width: 100%;
@@ -364,11 +342,8 @@ header .total_questions span p:first-child {
     justify-content: center;
 }
 
-
 /* footer game area next button */
-
 footer .next_btn {
-    /* button hidden until answer selected*/
     display: none;
     height: 40px;
     padding: 0 13px;
@@ -389,20 +364,15 @@ footer .next_btn {
         background: #b1d1f0;
         box-shadow: 8px 8px 8px black;
         color: rgb(3, 46, 103);
-
     }
 }
 
-
 /* Results window styling */
-
 .result_area {
-
     background: rgb(228, 232, 250);
     padding: 25px 30px;
     border-radius: 5px;
     display: flex;
-    /*flex*/
     text-align: center;
     align-items: center;
     flex-direction: column;
@@ -411,13 +381,11 @@ footer .next_btn {
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
     box-shadow: 2px 2px 2px black;
-
 }
 
 .result_area .complete_text {
     font-size: 40px;
     font-weight: 500;
-
 }
 
 .result_area .percentage {
@@ -446,7 +414,6 @@ footer .next_btn {
 
 .result_area .score_value span {
     display: flex;
-
     margin: 10px 10px;
     font-size: 20px;
     font-weight: 500;
@@ -462,10 +429,7 @@ footer .next_btn {
     padding: 0 4px;
 }
 
-
-
 /*Footer styling*/
-
 .footer_basic {
     position: absolute;
     bottom: 0%;
@@ -484,7 +448,6 @@ footer .next_btn {
     margin-bottom: 0;
 }
 
-
 .footer_basic #footer-li a {
     color: rgb(3, 46, 103);
     text-decoration: none;
@@ -495,7 +458,6 @@ footer .next_btn {
 @media only screen and (min-width: 800px) {
     .footer_basic #footer-li a:hover {
         opacity: 1;
-
     }
 }
 
@@ -635,7 +597,6 @@ footer .next_btn {
 
     .game_area .play_area {
         padding: 0px;
-
     }
 
     .game_area .play_area .question_text {
@@ -644,7 +605,6 @@ footer .next_btn {
         text-align: center;
         margin-bottom: 30px;
         padding: 5px;
-
     }
 
     .game_area .play_area .option_list {
@@ -681,16 +641,6 @@ footer .next_btn {
     }
 }
 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1300px) {
     .instructions_area {
@@ -699,7 +649,5 @@ footer .next_btn {
         align-items: center;
         justify-content: center;
         padding: 20px;
-
     }
-
 }
