@@ -79,7 +79,8 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 # Design
 
 ## Typography
-*   For my font I chose Lato which was imported from Google fonts. I chose this font as it is simple and clear to read. The purpose of the test is to test knowledge and I did not want a font that ditracts away from this and is challenging to read on any device. 
+*   For my font I chose Lato which was imported from Google fonts. I chose this font as it is simple and clear to read. The purpose of the test is to test knowledge and I did not want a font that ditracts away from this and is challenging to read on any device.
+![lato](assets/images/font.webp)
 
 ## Color Scheme
 - I chose a very simple color scheme that was consistant throughout the test. Text was black for the question on a white background and button text is white alternating to background blue color on hover effect. The focus of the test is to help the user test their biological knowledge. I did not want a design and color scheme that ditracted away from this purpose. The color scheme is displayed in the features section below.
