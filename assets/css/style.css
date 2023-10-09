@@ -72,7 +72,7 @@ h2 {
     color: white
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1040px) {
     .start_btn:hover {
         background: #b1d1f0;
         color: rgb(3, 46, 103);
@@ -151,7 +151,7 @@ h2 {
     margin-top: auto;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1040px) {
     .buttons button:hover {
         background: #b1d1f0;
         transition: all .5s ease;
@@ -307,7 +307,7 @@ header .total_questions span p:first-child {
 }
 
 /* option list in game area hover color */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1040px) {
     .game_area .option_list .option:hover {
         background: rgb(3, 46, 103);
         color: #fff;
@@ -360,7 +360,7 @@ footer .next_btn {
     transition: all 0.5s ease;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1040px) {
     footer .next_btn:hover {
         background: #b1d1f0;
         box-shadow: 8px 8px 8px black;
@@ -456,7 +456,7 @@ footer .next_btn {
     padding: 5px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1040px) {
     .footer_basic #footer-li a:hover {
         opacity: 1;
     }
@@ -490,7 +490,7 @@ footer .next_btn {
     opacity: 0.75;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1040px) {
     .footer_basic .social>a:hover {
         opacity: 0.9;
         transform: scale(0.9);
