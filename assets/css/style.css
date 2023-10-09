@@ -627,8 +627,6 @@ footer .next_btn {
     .game_area {
         width: 95%;
         box-shadow: 2px 2px 2px black;
-        top: 50%;
-        margin-top: 5%;
     }
 
     .game_area .play_area {
@@ -648,7 +646,7 @@ footer .next_btn {
     .game_area .play_area .option_list {
         padding: 0px 0px 15px 0px;
         display: block;
-        width: 50%;
+        min-width: 50%;
     }
 
     .game_area .option_list .option {
