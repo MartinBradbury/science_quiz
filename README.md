@@ -31,6 +31,7 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
   - [Features Tested](#features-tested)
 - [Deployment](#deployment)
 - [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
 
 # Features
 
@@ -177,8 +178,8 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 | Quit Quiz Button  | When clicked <br> the Test ends <br> takes user to start. <br> | Clicked Quit | Navigate to start   | Pass        |
 | Start Test Button | When clicked <br> Test window shown <br> the test begins <br> | Clicked Start | Test begins  | Pass        |
 | Question Number | When test begins <br> question number displayed <br> counts up as you progress questions.| Moved through questions | Number counts up | Pass        |
-| Timer Bar | When test begins <br> timer bar decreases. <br>  | Timer bar decreases | Pass        |
-| Timer     | When test begind <br> timer decreases from 15 <br> down to 0. | Timer decreases  | Pass    |
+| Timer Bar | When test begins <br> timer bar decreases. <br>  | Started the test | Timer bar decreases | Pass        |
+| Timer     | When test begind <br> timer decreases from 15 <br> down to 0. | Started the test | Timer decreases  | Pass    |
 | No answer selected | If no answer is <br> selected when timer <br> ends, correct answer <br> shown and no score acquired. | Did not select and answer | No point awarded and <br> correct answer shown | Pass    |
 | Next Button | When test begins the <br> next button will only display when <br> an answer is selected <br> and when clicked takes <br> user to next questions. | Clicked answer | Next button appears and takes <br> user to next questions | Pass   |
 | Results Window | After completing the Test <br> the results window will show. | Completed all questions | Results window shown | Pass    |
@@ -207,3 +208,15 @@ Social Media | Click social media icons takes <br> user to social media site. | 
 
 # Credits
 
+* [W3Schools](https://www.w3schools.com/) was used as a general source of knowledge.
+* [Loves Math project](https://learn.codeinstitute.net/dashboard)  was used as a general source of knowledge
+* [CodingNepal](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=1388s) Code was adapted from this source for the following features: Test general layout and navigation.
+* [Open Source Coding](https://www.youtube.com/watch?v=LJ4PZ8JnRCg&t=1662s) Code was adapted from this source for the following features and ideas: Timer Bar.
+* [Slack Overflow](#https://stackoverflow.com/) Was used in the process of debugging the code.
+* [MND Web Docs](#) was used as a general source of knowledge.
+
+# Acknowledgements
+
+* I would like to thank my mentor 'narender mentor' for the support and guidence througout the project. He helped me push and challenge myself with the code through the project development.
+* I would like to thank my colleagues on Slack who provide help, support and essential feedback.
+* I would like to thank my family in supporting me on this journey and allowing me the time to dedicated to this project. 
