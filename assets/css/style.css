@@ -307,7 +307,7 @@ header .total_questions span p:first-child {
     border-radius: 5px;
     padding: 8px 15px;
     margin-bottom: 30px;
-    margin-right: 30px;
+    margin-right: 70px;
     margin-top: 50px;
     font-size: 17px;
     display: flex;
@@ -320,8 +320,8 @@ header .total_questions span p:first-child {
 }
 
 .game_area .option_list .option:last-child {
-    /* margin-bottom: 0px; */
     margin-bottom: 30px;
+    margin-right: 0px;
 }
 
 /* option list in game area hover color */
