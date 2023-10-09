@@ -590,6 +590,8 @@ footer .next_btn {
     .instructions_area .instructions_list .inst {
         margin-bottom: 30px;
         margin-top: 20px;
+        height: auto;
+        font-size: 15px;
     }
 
     footer {
