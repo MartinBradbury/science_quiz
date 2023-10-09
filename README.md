@@ -2,7 +2,7 @@
 
 ![A Level Biology: Biological Molecules Test](assets/images/responsive.webp)
 
-This interavtive A Level Biology Biological Molecules test is aimed at Year 12 and 13 students who want to test their knowledge on the topic of Biological Molecules. The test will consist of 20 questions and will test the users knowledge across Carbohydrates, Lipids and Water. The user will be faced with a questions in a random order and 4 possible options to selext from. Once selected the user will get instant feedback if they are correct or incorrect. If incorrect the correct answer will be displayed. FOr each question the user will get a maximum of 15 seconds to respond and this will be displayed as a number counting down and a timer bar that will decrease as the time progresses. At the end of the test the user will be able to see how many answers they got correct, what their perfentage is and a conversion of thet percentage into a grade based on typical A Level grade boundaries.
+This interactive A Level Biology Biological Molecules test is aimed at Year 12 and 13 students who want to test their knowledge on the topic of Biological Molecules. The test will consist of 20 questions and will test the users knowledge across Carbohydrates, Lipids and Water. The user will be faced with a questions in a random order and 4 possible options to select from. Once selected the user will get instant feedback if they are correct or incorrect. If incorrect the correct answer will be displayed. For each question the user will get a maximum of 15 seconds to respond and this will be displayed as a number counting down and a timer bar that will decrease as the time progresses. At the end of the test the user will be able to see how many answers they got correct, what their percentage is and a conversion of that percentage into a grade based on typical A Level grade boundaries.
 
 # Contents
 
@@ -20,7 +20,7 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
     - [Interactive Start Button](#interactive-start-button)
     - [Question number in the Test Area](#question-number-in-the-test-area)
     - [Timer bar and number](#timer-bar-and-number)
-    - [Seclecting correct answer](#seclecting-correct-answer)
+    - [Selecting correct answer](#selecting-correct-answer)
     - [Incorrect answer selection](#incorrect-answer-selection)
     - [Results Area](#results-area)
     - [Random Question Order Generation](#random-question-order-generation)
@@ -33,6 +33,8 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
   - [Validator testing:](#validator-testing)
   - [Unfixed Bugs](#unfixed-bugs)
   - [Lighthouse results](#lighthouse-results)
+    - [Mobile](#mobile)
+    - [Desktop](#desktop)
   - [Responsiveness](#responsiveness)
   - [Features Tested](#features-tested)
 - [Deployment](#deployment)
@@ -40,7 +42,7 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 - [Acknowledgements](#acknowledgements)
 
 # Target Audience
-*   This test is aimed at students who are currently studying A Level Biology. It is intended as a quick knowledge check to test understanding and retnetion of the content taught. It can also be used a fun test for people who studied A level Biology in the past and want to see how much they can rememebr. 
+*   This test is aimed at students who are currently studying A Level Biology. It is intended as a quick knowledge check to test understanding and retention of the content taught. It can also be used a fun test for people who studied A level Biology in the past and want to see how much they can remember. 
   
 # User Expectations
 *   This is a interactive test that is able to be completed on desktop, tablet and mobile devices.
@@ -59,9 +61,9 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
     * I am looking for a easy to navigate test the is responsive and easy to interact with on all devices.
     * I will see a start button and a header detailing the content and module of the test. 
     * I will click start and see the instructions for the test.
-    * The instructions will be clearly layed out and easy to follow. 
+    * The instructions will be clearly laid out and easy to follow. 
     * I will see two buttons at the bottom of the rules inviting me to start the test or quit.
-    * The test will begin when i click the start button. 
+    * The test will begin when I click the start button. 
     * I will see the question number and total at the top of the test area.
     * I will see a timer bar indicating how long I have left on that question. 
     * I will see a timer number counting down to show how long I have left on that question. 
@@ -79,12 +81,11 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 # Design
 
 ## Typography
-*   For my font I chose Lato which was imported from Google fonts. I chose this font as it is simple and clear to read. The purpose of the test is to test knowledge and I did not want a font that ditracts away from this and is challenging to read on any device.
+*   For my font I chose Lato which was imported from Google fonts. I chose this font as it is simple and clear to read. The purpose of the test is to test knowledge and I did not want a font that distracts away from this and is challenging to read on any device.
 ![lato](assets/images/font.webp)
 
 ## Color Scheme
-- I chose a very simple color scheme that was consistant throughout the test. Text was black for the question on a white background and button text is white alternating to background blue color on hover effect. The focus of the test is to help the user test their biological knowledge. I did not want a design and color scheme that ditracted away from this purpose. The color scheme is displayed in the features section below.
-
+- I chose a very simple color scheme that was consistent throughout the test. Text was black for the question on a white background and button text is white alternating to background blue color on hover effect. The focus of the test is to help the user test their biological knowledge. I did not want a design and color scheme that distracted away from this purpose. The color scheme is displayed in the features section below.
 
 
 # Features
@@ -98,21 +99,21 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 ![Footer](assets/images/footer.webp)
 
 ### Interactive Start Button
-*   The users will be greated on the home page with a interactive start button that has a hover effect and opens up the rules window when clicked.
+*   The users will be greeted on the home page with a interactive start button that has a hover effect and opens up the rules window when clicked.
 
 ![Start](assets/images/start.webp)  
 ![Hover](assets/images/hover.webp)
 ![Rules](assets/images/rules.webp)
 
 ### Question number in the Test Area
-*   The users will see the question number they are on and how many euestions there are in the header of their test.
+*   The users will see the question number they are on and how many questions there are in the header of their test.
 ![question](assets/images/question.webp)
 
 ### Timer bar and number
 *   The user will see how many seconds left there are to answer the current question. This will also be displayed in a timer bar.
 ![timerbar](assets/images/timerandbar.webp)
 
-### Seclecting correct answer
+### Selecting correct answer
 *   Selecting the correct answer will stop the timer and timer bar, display the answer as green and display a button to move to the next question
 ![correct](assets/images/correct.webp)
 
@@ -121,7 +122,7 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 ![incorrect](assets/images/incorrect.webp)
 
 ### Results Area
-*   The results area will show the total number of questions correfct, calculate the percentage and use the percentage to generate a grede for the user based on OCR Alevel Biology Grade boundries.
+*   The results area will show the total number of questions correct, calculate the percentage, and use the percentage to generate a grade for the user based on OCR A level Biology Grade boundaries.
 ![results](assets/images/resultsarea.webp)
 
 ### Random Question Order Generation
@@ -130,29 +131,28 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 ![questions](assets/images/queschange2.webp)
 
 ### Random Answer Order Generation
-*   The answers will appear in a random order for each question every time the test is appenpted. This ensures the user does not just learn the sequence of answers.
+*   The answers will appear in a random order for each question every time the test is attempted. This ensures the user does not just learn the sequence of answers.
 ![answers](assets/images/anschange.webp)
 ![answers](assets/images/anschange2.webp)
 
 ## Features Left To Implement and Future Development
 ### Below are features that I would like to integrate into the project:
 *   Greater selection of questions and / or the use of an API to generate the questions.
-*   Submit test result section. This will be very useful as a teacher if the students are able to submit their answers dirtectly to me and those answers could be tabilated.
-*   Multiple topics for the suudents to choose from throughout the whole A level Biology specification.
-*   Level of difficulty questions that the student can select which will inturn dictate the damand of the questions being asked.
-*   Responsive test design which selects the next question based on the success of the student in the provious few questions.
+*   Submit test result section. This will be very useful as a teacher if the students are able to submit their answers directly to me and those answers could be tabulated.
+*   Multiple topics for the students to choose from throughout the whole A level Biology specification.
+*   Level of difficulty questions that the student can select which will in turn dictate the demand of the questions being asked.
+*   Responsive test design which selects the next question based on the success of the student in the previous few questions.
 
 ## Wireframes
 
-*	Main page:
+*   Main page:
 [Design](assets/images/home.webp) 
-*	Instructions:
+*   Instructions:
 [Design](assets/images/instructions.webp) 
-*	Test Area:
+*   Test Area:
 [Design](assets/images/questions.webp) 
-*	Results Area:
+*   Results Area:
 [Design](assets/images/results.webp) 
-
 
 ## Framework, Languages and Programs Used
 
@@ -172,7 +172,7 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
    *Xd was used to create the wire frames for the project.
 
 6. [Javascript](https://www.javascript.com/)
-   *Javascript was used to creat the interactive elements on the website and Quiz.
+   *Javascript was used to create the interactive elements on the website and Quiz.
 
 # Testing
 
@@ -189,24 +189,24 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 ![CSSResults](assets/images/cssval.png)
 
 *   [Javascript:](https://jshint.com/)
-    *   No effors were found when testing with the JSHunt Validator. [JSValidator]
-        * The following meterics were returned:
+    *   No errors were found when testing with the JSHunt Validator. [JSValidator]
+        * The following metrics were returned:
         * There are 16 functions in this file.
         * Function with the largest signature take 2 arguments, while the median is 0.
         * Largest function has 26 statements in it, while the median is 3.
         * The most complex function has a cyclomatic complexity value of 8 while the median is 1.
 
 ## Unfixed Bugs
-*   On desktop devices: Tabbing out of the test once started loses the window focus. This causes the timerbar to stop counting down. The numbers work correctly. This will be corrected in the future by ensuring when the test has started, the window is always the focus even if tabbed out.
+*   On desktop devices: Tabbing out of the test once started loses the window focus. This causes the timer bar to stop counting down. The numbers work correctly. This will be corrected in the future by ensuring when the test has started, the window is always the focus even if tabbed out.
 
 ## Lighthouse results
 
 *   I have used the developer tools in google chrome to test each page in my website for performance, accessibility, best practise and SEO. Below is an example of the homepage.
 
-* Mobile
+### Mobile
 ![Science Test Mobile](assets/images/lhmobile.webp)
-* Desktop
-![Science QUiz Desktop](assets/images/lhdesk.webp)
+### Desktop
+![Science Quiz Desktop](assets/images/lhdesk.webp)
 
 ## Responsiveness
 *   In order to fully test the responsiveness of the web application I performed further tests on different devices and browsers. These were:
@@ -214,12 +214,12 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
       * Google Chrome
       * Safari
       * MS Edge
-      * FireFox
+      * Firefox
 
     * Devices:
-      * Iphone 14pro
-      * Iphone 12 Mini
-      * Ipad Pro 12.9inc
+      * IPhone 14pro
+      * IPhone 12 Mini
+      * IPad Pro 12.9inc
       * Mac Laptop
       * Windows desktop PC
       * Windows Laptop
@@ -233,7 +233,7 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 | Start Test Button | When clicked <br> Test window shown <br> the test begins <br> | Clicked Start | Test begins  | Pass        |
 | Question Number | When test begins <br> question number displayed <br> counts up as you progress questions.| Moved through questions | Number counts up | Pass        |
 | Timer Bar | When test begins <br> timer bar decreases. <br>  | Started the test | Timer bar decreases | Pass        |
-| Timer     | When test begind <br> timer decreases from 15 <br> down to 0. | Started the test | Timer decreases  | Pass    |
+| Timer     | When test begins <br> timer decreases from 15 <br> down to 0. | Started the test | Timer decreases  | Pass    |
 | No answer selected | If no answer is <br> selected when timer <br> ends, correct answer <br> shown and no score acquired. | Did not select and answer | No point awarded and <br> correct answer shown | Pass    |
 | Next Button | When test begins the <br> next button will only display when <br> an answer is selected <br> and when clicked takes <br> user to next questions. | Clicked answer | Next button appears and takes <br> user to next questions | Pass   |
 | Results Window | After completing the Test <br> the results window will show. | Completed all questions | Results window shown | Pass    |
@@ -241,17 +241,16 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 |Restart Button | Click button to restart Test | Clicked restart | Test restarts | Pass  |
 Social Media | Click social media icons takes <br> user to social media site. | Clicked social media icons. | Navigated to social media. | Pass  |
 
-
 # Deployment
 
-*   The website has been deployed to GitHub pages. This was acomplished by following the detailed steps below:
-*   selecting settings in the github repositivry.
+*   The website has been deployed to GitHub pages. This was accomplished by following the detailed steps below:
+*   selecting settings in the GitHub repository.
 ![selectsettings](assets/images/selectsettings.webp)
 
 *  Navigate to the Pages tab on the left hand side of the screen.
 ![pagestab](assets/images/pagestab.webp)
 
-*  Select deploy from branch in the source section and sesure the main branch is selected in the branch.
+*  Select deploy from branch in the source section and ensure the main branch is selected in the branch.
 ![deploy](assets/images/deploy.webp)
 
 *   Finally click the save button and the page will be deployed to GitHub Pages.
@@ -271,6 +270,6 @@ Social Media | Click social media icons takes <br> user to social media site. | 
 
 # Acknowledgements
 
-* I would like to thank my mentor 'narender mentor' for the support and guidence througout the project. He helped me push and challenge myself with the code through the project development.
+* I would like to thank my mentor 'narender mentor' for the support and guidance throughout the project. He helped me push and challenge myself with the code through the project development.
 * I would like to thank my colleagues on Slack who provide help, support and essential feedback.
 * I would like to thank my family in supporting me on this journey and allowing me the time to dedicated to this project. 
