@@ -8,6 +8,12 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 
 - [A Level Biology: Biological Molecules Test](#a-level-biology-biological-molecules-test)
 - [Contents](#contents)
+- [Target Audience](#target-audience)
+- [User Expectations](#user-expectations)
+- [User Stories](#user-stories)
+- [Design](#design)
+  - [Typography](#typography)
+  - [Color Scheme](#color-scheme)
 - [Features](#features)
   - [Existing Features:](#existing-features)
     - [Header and Footer](#header-and-footer)
@@ -32,6 +38,53 @@ This interavtive A Level Biology Biological Molecules test is aimed at Year 12 a
 - [Deployment](#deployment)
 - [Credits](#credits)
 - [Acknowledgements](#acknowledgements)
+
+# Target Audience
+*   This test is aimed at students who are currently studying A Level Biology. It is intended as a quick knowledge check to test understanding and retnetion of the content taught. It can also be used a fun test for people who studied A level Biology in the past and want to see how much they can rememebr. 
+  
+# User Expectations
+*   This is a interactive test that is able to be completed on desktop, tablet and mobile devices.
+*   The Test will load quickly on all devices. 
+*   The test is fully responsive. 
+*   Feedback from each question attempted. 
+*   Clear indication of time left to answer each question via a timer bar and number.
+*   Clear indication of which question they are on and how many questions in total. 
+*   Overall feedback with a mark, percentage and grade at the end inline with OCR specification.
+*   The ability to restart the test once completed. 
+
+# User Stories
+
+* As a visitor:
+
+    * I am looking for a easy to navigate test the is responsive and easy to interact with on all devices.
+    * I will see a start button and a header detailing the content and module of the test. 
+    * I will click start and see the instructions for the test.
+    * The instructions will be clearly layed out and easy to follow. 
+    * I will see two buttons at the bottom of the rules inviting me to start the test or quit.
+    * The test will begin when i click the start button. 
+    * I will see the question number and total at the top of the test area.
+    * I will see a timer bar indicating how long I have left on that question. 
+    * I will see a timer number counting down to show how long I have left on that question. 
+    * I will see the question being asked. 
+    * I will see 4 possible answers.
+    * Once an answer is selected I will see if I am correct instantly by showing the answer selected in green.
+    * If incorrect I will see my answer selected turn red and the correct answer shown in green. 
+    * The next button will appear when I have selected an answer and the timer and timer bar will stop. 
+    * I will complete all 20 questions.
+    * After completing all 20 questions a results window will appear showing me my over all score, percentage and grade achieved. 
+    * I am able to restart the test again
+    * The question order and options in each question will be random.
+    * I can see links in the footer to social media. 
+
+# Design
+
+## Typography
+*   For my font I chose Lato which was imported from Google fonts. I chose this font as it is simple and clear to read. The purpose of the test is to test knowledge and I did not want a font that ditracts away from this and is challenging to read on any device. 
+
+## Color Scheme
+*   I chose a very simple color scheme that was consistant throughout the test. The focus of the test is to help the user test their biological knowledge. I did not want a design and color scheme that ditracted away from this purpose. 
+
+
 
 # Features
 
@@ -212,7 +265,7 @@ Social Media | Click social media icons takes <br> user to social media site. | 
 * [Loves Math project](https://learn.codeinstitute.net/dashboard)  was used as a general source of knowledge
 * [CodingNepal](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=1388s) Code was adapted from this source for the following features: Test general layout and navigation.
 * [Open Source Coding](https://www.youtube.com/watch?v=LJ4PZ8JnRCg&t=1662s) Code was adapted from this source for the following features and ideas: Timer Bar.
-* [Slack Overflow](#https://stackoverflow.com/) Was used in the process of debugging the code.
+* [Slack Overflow](https://stackoverflow.com/) Was used in the process of debugging the code.
 * [MND Web Docs](#) was used as a general source of knowledge.
 
 # Acknowledgements
