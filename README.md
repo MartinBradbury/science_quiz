@@ -229,7 +229,7 @@ This interactive A Level Biology Biological Molecules test is aimed at Year 12 a
 | Feature      | Expected Outcome | Testing Performed    | Result | Pass or Fail |
 |   :---       |      :----:      |        :----:        | :----: |    :----:    
 | Start Button  | When clicked <br> test instructions <br> appear. | Clicked Start | Instructions shown   | Pass        |
-| Quit Quiz Button  | When clicked <br> the Test ends <br> takes user to start. <br> | Clicked Quit | Navigate to start   | Pass        |
+| Quit Test Button  | When clicked <br> the Test ends <br> takes user to start. <br> | Clicked Quit | Navigate to start   | Pass        |
 | Start Test Button | When clicked <br> Test window shown <br> the test begins <br> | Clicked Start | Test begins  | Pass        |
 | Question Number | When test begins <br> question number displayed <br> counts up as you progress questions.| Moved through questions | Number counts up | Pass        |
 | Timer Bar | When test begins <br> timer bar decreases. <br>  | Started the test | Timer bar decreases | Pass        |
