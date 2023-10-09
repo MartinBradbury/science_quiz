@@ -172,7 +172,7 @@ h2 {
 
 .game_area {
 
-
+    min-width: 60%;
     background: rgb(228, 232, 250);
     border-radius: 5px;
     opacity: 0;
@@ -315,6 +315,8 @@ header .total_questions span p:first-child {
     justify-content: space-evenly;
     cursor: pointer;
     transition: all 0.5s ease;
+    min-height: 100px;
+    min-width: 150px;
 }
 
 .game_area .option_list .option:last-child {
@@ -656,6 +658,8 @@ footer .next_btn {
         margin-right: 0px;
         justify-content: center;
         margin-top: 30px;
+        min-height: 0px;
+        min-width: 0px;
     }
 
     .game_area .option_list .option:last-child {
