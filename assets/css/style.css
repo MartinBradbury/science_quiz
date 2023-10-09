@@ -628,6 +628,7 @@ footer .next_btn {
         width: 95%;
         box-shadow: 2px 2px 2px black;
         top: 50%;
+        margin-top: 5%;
     }
 
     .game_area .play_area {
