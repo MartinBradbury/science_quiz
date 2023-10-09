@@ -271,7 +271,7 @@ header .total_questions span p:first-child {
     font-size: 25px;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .game_area .play_area .option_list {
@@ -293,11 +293,12 @@ header .total_questions span p:first-child {
     font-size: 17px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     cursor: pointer;
     transition: all 0.5s ease;
     min-height: 100px;
     min-width: 150px;
+    text-align: center;
 }
 
 .game_area .option_list .option:last-child {
