@@ -70,72 +70,82 @@ async function loadQuestion() {
     questionsList = data.results;
     console.log(questionsList);
     showQuestion();
-}   
+}
 
 
+/* correct_answer is from the json data */
+/* incorrect_answers is from the json data*/
+//display Question and options
+function showQuestion() {
+    let question = questionsList[currentIndex];
+    let correctAnswer = question.correct_answer;
+    let incorrectAnswer = question.incorrect_answers;
 
-// getting the questions from array
-function showQuestions(index) {
-    const question_text = document.querySelector(".question_text");
-    const option_list = document.querySelector(".option_list");
+    // Shuffle the incorrect answers array
+    incorrectAnswer.sort(() => Math.random() - 0.5);
 
-    //random options shuffle
-    let array = questions[index].options;
-    function random() {
-        let aFloat = Math.random() * array.length;
-        let indexA = Math.floor(aFloat);
-        return indexA;
+    // Select the first three incorrect answers
+    let optionsList = incorrectAnswer.slice(0, 3);
+
+    // Add the correct answer to the list
+    optionsList.push(correctAnswer);
+
+    // Shuffle the options list again to ensure the correct answer is not always in the same position
+    optionsList.sort(() => Math.random() - 0.5);
+
+    questionElement.innerHTML = `${question.question}`;
+    options.innerHTML = `${optionsList.map((option) => `<li class="option">${option}</li>`).join('')}`;
+
+    opt = document.querySelectorAll(".option");
+    for (let i = 0; i < opt.length; i++) {
+        opt[i].addEventListener("click", optionSelected);
     }
-    for (let i = 0; i < array.length; i++) {
-        let randomIndex = random();
-        [array[i], array[randomIndex]] = [array[randomIndex], array[i]];
-        let option_tag = (`<div class="option">${questions[index].options[0]}<span></span ></div>`) +
-            (`<div class="option">${questions[index].options[1]}<span></span ></div>`) +
-            (`<div class="option">${questions[index].options[2]}<span></span ></div>`) +
-            (`<div class="option">${questions[index].options[3]}<span></span ></div>`);
+    attachOptionListeners();
+}
 
-        //Writing the question and answers into the HTML
-        question_text.innerHTML = (`${questions[index].question}`);
-        option_list.innerHTML = option_tag;
-
-        //sececting correct answer
-        const option = option_list.querySelectorAll(".option");
-        for (let i = 0; i < option.length; i++) {
-            option[i].setAttribute("onclick", "optionSelected(this)");
-        }
+function attachOptionListeners() {
+    opt = document.querySelectorAll(".option");
+    for (let i = 0; i < opt.length; i++) {
+        opt[i].addEventListener("click", optionSelected);
     }
+
 }
 
 //selecting an answer correct / incorrect
-function optionSelected(answer) {
+function optionSelected(event) {
+    console.log(event.target.textContent);
     clearInterval(counter);
     clearInterval(progressLine);
-
-    let userAns = answer.textContent;
-    let correctAns = questions[question_count].answer;
-    let allOptions = option_list.children.length;
+    let userAns = event.target.textContent;
+    let correctAns = questionsList[currentIndex].correct_answer;
+    let allOptions = options.children.length;
+    console.log(allOptions);
 
     if (userAns === correctAns) {
         userScore += 1;
         console.log(userScore);
-        answer.classList.add("correct");
+        event.target.classList.add("correct");
         console.log("Answer is Correct!");
+        console.log(correctAns);
+        console.log('Are they equal?', userAns === correctAns);
     } else {
-        answer.classList.add("incorrect");
+        event.target.classList.add("incorrect");
         console.log("Answer is wrong!");
+        console.log(correctAns);
+        console.log('Are they equal?', userAns === correctAns);
     }
-
     //once selected, disable all other options
     for (let i = 0; i < allOptions; i++) {
-        if (option_list.children[i].textContent == correctAns) {
-            option_list.children[i].setAttribute("class", "option correct");
+        if (options.children[i].textContent == correctAns) {
+            options.children[i].classList.add("correct");
         }
     }
 
     // if incorrect answer, show all correct answers
     for (let i = 0; i < allOptions; i++) {
-        option_list.children[i].classList.add("disabled");
+        options.children[i].classList.add("disabled");
     }
+
     next_btn.style.display = "block";
 }
 
