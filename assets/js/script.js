@@ -1,19 +1,23 @@
-
 // getting required elements using querySelector which identifies elements first time appears.
+const next_btn = document.querySelector(".next_btn");
 const start_btn = document.querySelector(".start_btn");
 const instructions_area = document.querySelector(".instructions_area");
-const exit_btn = document.querySelector(".exit_btn");
 const begin_btn = document.querySelector(".begin_btn");
 const game_area = document.querySelector(".game_area");
 const option_list = document.querySelector(".option_list");
 const options = document.querySelector('.option_list');
+const exit_btn = document.querySelector(".exit_btn");
 const timer_num = document.querySelector(".progress_text");
 const time_line = document.querySelector(".progress_bar");
 const result_area = document.querySelector(".result_area");
 const header_main = document.querySelector(".header_main");
 const footer_basic = document.querySelector(".footer_basic");
-const next_btn = document.querySelector(".next_btn");
 const quit = document.querySelector(".quit");
+const scoreText = result_area.querySelector(".score_value");
+const difficulty_area = document.querySelector(".difficulty_area");
+const easy_btn = document.querySelector(".easy_btn");
+const medium_btn = document.querySelector(".medium_btn");
+const hard_btn = document.querySelector(".hard_btn");
 
 let questionElement = document.getElementById('question');
 let questionsList = [];
@@ -26,46 +30,95 @@ let timeValue = 15;
 let progressLine;
 let userScore = 0;
 let opt;
-
-
-
+let difficulty = 'easy';
 
 // If the start button is clicked
 start_btn.addEventListener("click", () => {
+    //Shows instructions on click
     instructions_area.classList.add("activeInfo");
-    header_main.classList.add("activeHeader");
-    footer_basic.classList.add("activeFooter");
+    // header_main.classList.add("activeHeader");
+    // footer_basic.classList.add("activeFooter"); 
 });
 
-exit_btn.addEventListener("click", () => {
-    instructions_area.classList.remove("activeInfo");
-});
-
-
-//Event listener to remove instructions and add game area and reset timers
-begin_btn.addEventListener("click", () => {
-
+easy_btn.addEventListener("click", () => {
+    difficulty_area.classList.remove("activeDifficulty");
     instructions_area.classList.remove("activeInfo");
     game_area.classList.add("activeGame");
     questionCounter(1);
     startTimer(15);
     startTimerLine(0);
+    difficulty = 'easy';
+    loadQuestion().then(() => {
+        showQuestion();
+    });
+});
+
+medium_btn.addEventListener("click", () => {
+    difficulty_area.classList.remove("activeDifficulty");
+    instructions_area.classList.remove("activeInfo");
+    game_area.classList.add("activeGame");
+    questionCounter(1);
+    startTimer(15);
+    startTimerLine(0);
+    difficulty = 'medium';
+    loadQuestion().then(() => {
+        showQuestion();
+    });
+});
+
+hard_btn.addEventListener("click", () => {
+    difficulty_area.classList.remove("activeDifficulty");
+    instructions_area.classList.remove("activeInfo");
+    game_area.classList.add("activeGame");
+    questionCounter(1);
+    startTimer(15);
+    startTimerLine(0);
+    difficulty = 'hard';
     loadQuestion().then(() => {
         showQuestion();
     });
 });
 
 
+
+next_btn.addEventListener("click", () => {
+    if (question_number < questionsList.length) {
+        currentIndex += 1;
+        question_number += 1;
+        questionCounter(question_number);
+        clearInterval(counter);
+        startTimer(timeValue);
+        clearInterval(progressLine);
+        startTimerLine(widthValue);
+        next_btn.style.display = "none";
+        showQuestion();
+    } else {
+        console.log("Questions complete!");
+        showResultArea();
+
+    }
+
+});
+
+begin_btn.addEventListener("click", () => {
+    instructions_area.classList.remove("activeInfo");
+    difficulty_area.classList.add("activeDifficulty");
+});
+
 // Reloads the window on restart test button click
 quit.addEventListener("click", () => {
     window.location.reload();
 });
 
+//Exits the quiz to start
+exit_btn.addEventListener("click", () => {
+    instructions_area.classList.remove("activeInfo");
+});
 
 //Fetching questions from the API and loggin in the console in json
 async function loadQuestion() {
     //console.timeEnd('APIUrl');
-    const APIUrl = `https://opentdb.com/api.php?amount=20&category=17&difficulty=easy&type=multiple`;
+    const APIUrl = `https://opentdb.com/api.php?amount=20&category=17&difficulty=${difficulty}&type=multiple`;
     const result = await fetch(APIUrl);
     const data = await result.json();
     console.time('APIUrl');
@@ -75,7 +128,6 @@ async function loadQuestion() {
     console.log(questionsList);
     showQuestion();
 }
-
 
 /* correct_answer is from the json data */
 /* incorrect_answers is from the json data*/
@@ -115,7 +167,6 @@ function attachOptionListeners() {
 
 }
 
-//selecting an answer correct / incorrect
 function optionSelected(event) {
     console.log(event.target.textContent);
     clearInterval(counter);
@@ -153,25 +204,19 @@ function optionSelected(event) {
     next_btn.style.display = "block";
 }
 
-//Next Button on click
-next_btn.addEventListener("click", () => {
-    if (question_number < questionsList.length) {
-        currentIndex += 1;
-        question_number += 1;
-        questionCounter(question_number);
-        clearInterval(counter);
-        startTimer(timeValue);
-        clearInterval(progressLine);
-        startTimerLine(widthValue);
-        next_btn.style.display = "none";
-        showQuestion();
-    } else {
-        console.log("Questions complete!");
-        showResultArea();
+// top questions counter 
+function questionCounter(question_number) {
+    const top_q_counter = game_area.querySelector(".total_questions");
+    let totalQTag = (`<span><p> ${question_number} </p>of<p> ${questionsList.length} </p>Questions</span>`);
+    top_q_counter.innerHTML = totalQTag;
+}
 
-    }
+function showResultArea() {
+    instructions_area.classList.remove("activeInfo");
+    game_area.classList.remove("activeGame");
+    result_area.classList.add("activeResult");
 
-});
+}
 
 //Results area Function and add active results window
 function showResultArea() {
@@ -182,18 +227,18 @@ function showResultArea() {
     const scoreText = result_area.querySelector(".score_value");
 
     if (userScore) {
-        let scoreTag = (`<span><p> ${userScore} </p> out of <p> ${questions.length}</p></span>`);
+        let scoreTag = (`<span><p> ${userScore} </p> out of <p> ${questionsList.length}</p></span>`);
         scoreText.innerHTML = scoreTag;
     }
 
     //Calculate percentage function and round to whole number
 
-    var percentage = function calculatePercentage(x, y) {
+    let percentage = function calculatePercentage(x, y) {
         return Math.round((x / y) * 100);
     };
 
     // store percentage function result and put into HTML
-    let result = percentage(userScore, questions.length) + "%";
+    let result = percentage(userScore, questionsList.length) + "%";
     const percentText = document.querySelector(".percentage");
 
     let percentTag = (`<span>Percentage<p> ${result} </p><span>`);
@@ -223,13 +268,6 @@ function showResultArea() {
     }
 }
 
-// top questions counter 
-function questionCounter(index) {
-    const top_q_counter = game_area.querySelector(".total_questions");
-    let totalQTag = (`<span><p> ${index} </p>of<p> ${questions.length} </p>Questions</span>`);
-    top_q_counter.innerHTML = totalQTag;
-}
-
 //timer function
 function startTimer(time) {
     counter = setInterval(timer, 1000);
@@ -241,12 +279,12 @@ function startTimer(time) {
             timer_num.textContent = "0";
 
             // Selects correct answer when timer runs out and stops user selecting an answer.
-            let correctAns = questions[question_count].answer;
-            let allOptions = option_list.children.length;
+            let correctAns = questionsList[currentIndex].correct_answer;
+            let allOptions = options.children.length;
 
             for (let i = 0; i < allOptions; i++) {
                 if (option_list.children[i].textContent == correctAns) {
-                    option_list.children[i].setAttribute("class", "option correct");
+                    options.children[i].classList.add("correct");
                 }
             }
             for (let i = 0; i < allOptions; i++) {
@@ -258,6 +296,7 @@ function startTimer(time) {
         }
     }
 }
+
 // Progress bar function 
 function startTimerLine(time) {
     progressLine = setInterval(timer, 160);
@@ -270,4 +309,6 @@ function startTimerLine(time) {
         }
     }
 }
+
+
 
