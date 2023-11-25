@@ -36,8 +36,8 @@ let difficulty = 'easy';
 start_btn.addEventListener("click", () => {
     //Shows instructions on click
     instructions_area.classList.add("activeInfo");
-    // header_main.classList.add("activeHeader");
-    // footer_basic.classList.add("activeFooter"); 
+    header_main.classList.add("activeHeader");
+    footer_basic.classList.add("activeFooter"); 
 });
 
 easy_btn.addEventListener("click", () => {
