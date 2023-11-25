@@ -12,33 +12,8 @@ const time_line = document.querySelector(".progress_bar");
 const result_area = document.querySelector(".result_area");
 const header_main = document.querySelector(".header_main");
 const footer_basic = document.querySelector(".footer_basic");
-
-// If the start button is clicked
-start_btn.addEventListener("click", () => {
-    instructions_area.classList.add("activeInfo");
-    header_main.classList.add("activeHeader");
-    footer_basic.classList.add("activeFooter");
-});
-
-exit_btn.addEventListener("click", () => {
-    instructions_area.classList.remove("activeInfo");
-});
-
-//shuffle array index questions so questions appear in a random order
-questions.sort(() => Math.random() - '.5');
-
-//Event listener to remove instructions and add game area and reset timers
-begin_btn.addEventListener("click", () => {
-
-    instructions_area.classList.remove("activeInfo");
-    game_area.classList.add("activeGame");
-    questionCounter(1);
-    startTimer(15);
-    startTimerLine(0);
-    loadQuestion().then(() => {
-        showQuestion();
-    });
-});
+const next_btn = document.querySelector(".next_btn");
+const quit = document.querySelector(".quit");
 
 let questionElement = document.getElementById('question');
 let questionsList = [];
@@ -53,11 +28,33 @@ let userScore = 0;
 let opt;
 
 
-//Next button in the test
-const next_btn = document.querySelector(".next_btn");
 
-//restart the test button appearing on the results page
-const quit = document.querySelector(".quit");
+
+// If the start button is clicked
+start_btn.addEventListener("click", () => {
+    instructions_area.classList.add("activeInfo");
+    header_main.classList.add("activeHeader");
+    footer_basic.classList.add("activeFooter");
+});
+
+exit_btn.addEventListener("click", () => {
+    instructions_area.classList.remove("activeInfo");
+});
+
+
+//Event listener to remove instructions and add game area and reset timers
+begin_btn.addEventListener("click", () => {
+
+    instructions_area.classList.remove("activeInfo");
+    game_area.classList.add("activeGame");
+    questionCounter(1);
+    startTimer(15);
+    startTimerLine(0);
+    loadQuestion().then(() => {
+        showQuestion();
+    });
+});
+
 
 // Reloads the window on restart test button click
 quit.addEventListener("click", () => {
