@@ -37,7 +37,7 @@ start_btn.addEventListener("click", () => {
     //Shows instructions on click
     instructions_area.classList.add("activeInfo");
     header_main.classList.add("activeHeader");
-    footer_basic.classList.add("activeFooter"); 
+    footer_basic.classList.add("activeFooter");
 });
 
 easy_btn.addEventListener("click", () => {
@@ -79,8 +79,6 @@ hard_btn.addEventListener("click", () => {
     });
 });
 
-
-
 next_btn.addEventListener("click", () => {
     if (question_number < questionsList.length) {
         currentIndex += 1;
@@ -103,6 +101,9 @@ next_btn.addEventListener("click", () => {
 begin_btn.addEventListener("click", () => {
     instructions_area.classList.remove("activeInfo");
     difficulty_area.classList.add("activeDifficulty");
+    header_main.classList.add("activeHeader");
+    footer_basic.classList.add("activeFooter");
+
 });
 
 // Reloads the window on restart test button click
