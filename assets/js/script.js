@@ -122,10 +122,9 @@ async function loadQuestion() {
     const result = await fetch(APIUrl);
     const data = await result.json();
     console.time('APIUrl');
-
-
     questionsList = data.results;
     console.log(questionsList);
+    questionCounter(1);
     showQuestion();
 }
 
