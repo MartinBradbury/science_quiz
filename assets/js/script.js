@@ -57,6 +57,23 @@ quit.addEventListener("click", () => {
     window.location.reload();
 });
 
+
+//Fetching questions from the API and loggin in the console in json
+async function loadQuestion() {
+    //console.timeEnd('APIUrl');
+    const APIUrl = `https://opentdb.com/api.php?amount=20&category=17&difficulty=easy&type=multiple`;
+    const result = await fetch(APIUrl);
+    const data = await result.json();
+    console.time('APIUrl');
+
+
+    questionsList = data.results;
+    console.log(questionsList);
+    showQuestion();
+}   
+
+
+
 // getting the questions from array
 function showQuestions(index) {
     const question_text = document.querySelector(".question_text");
