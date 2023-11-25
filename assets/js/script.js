@@ -6,6 +6,7 @@ const exit_btn = document.querySelector(".exit_btn");
 const begin_btn = document.querySelector(".begin_btn");
 const game_area = document.querySelector(".game_area");
 const option_list = document.querySelector(".option_list");
+const options = document.querySelector('.option_list');
 const timer_num = document.querySelector(".progress_text");
 const time_line = document.querySelector(".progress_bar");
 const result_area = document.querySelector(".result_area");
@@ -28,16 +29,20 @@ questions.sort(() => Math.random() - '.5');
 
 //Event listener to remove instructions and add game area and reset timers
 begin_btn.addEventListener("click", () => {
+
     instructions_area.classList.remove("activeInfo");
     game_area.classList.add("activeGame");
-    header_main.classList.add("activeHeader");
-    footer_basic.classList.add("activeFooter");
-    showQuestions(0);
     questionCounter(1);
     startTimer(15);
     startTimerLine(0);
+    loadQuestion().then(() => {
+        showQuestion();
+    });
 });
 
+let questionElement = document.getElementById('question');
+let questionsList = [];
+let currentIndex = 0;
 let question_count = 0;
 let question_number = 1;
 let counter;
@@ -45,6 +50,8 @@ let widthValue = 100;
 let timeValue = 15;
 let progressLine;
 let userScore = 0;
+let opt;
+
 
 //Next button in the test
 const next_btn = document.querySelector(".next_btn");
@@ -151,23 +158,22 @@ function optionSelected(event) {
 
 //Next Button on click
 next_btn.addEventListener("click", () => {
-    if (question_count < questions.length - 1) {
-        question_count++;
-        question_number++;
-        showQuestions(question_count);
+    if (question_number < questionsList.length) {
+        currentIndex += 1;
+        question_number += 1;
         questionCounter(question_number);
         clearInterval(counter);
         startTimer(timeValue);
         clearInterval(progressLine);
         startTimerLine(widthValue);
         next_btn.style.display = "none";
-
-
+        showQuestion();
     } else {
         console.log("Questions complete!");
         showResultArea();
 
     }
+
 });
 
 //Results area Function and add active results window
