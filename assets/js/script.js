@@ -24,6 +24,7 @@ const games_btn = document.querySelector(".games_btn");
 const film_btn = document.querySelector(".film_btn");
 const general_btn = document.querySelector(".general_btn");
 
+let heading = document.getElementById("quiz_cat_heading");
 let questionElement = document.getElementById('question');
 let questionsList = [];
 let currentIndex = 0;
@@ -115,24 +116,28 @@ sci_btn.addEventListener("click", () => {
     category_area.classList.remove("activeCategory");
     difficulty_area.classList.add("activeDifficulty");
     category = '17';
+    heading.innerText = "Science & Nature";
 });
 
 games_btn.addEventListener("click", () => {
     category_area.classList.remove("activeCategory");
     difficulty_area.classList.add("activeDifficulty");
     category = '15';
+    heading.innerText = "Video Games";
 });
 
 film_btn.addEventListener("click", () => {
     category_area.classList.remove("activeCategory");
     difficulty_area.classList.add("activeDifficulty");
     category = '11';
+    heading.innerText = "Films";
 });
 
 general_btn.addEventListener("click", () => {
     category_area.classList.remove("activeCategory");
     difficulty_area.classList.add("activeDifficulty");
     category = '9';
+    heading.innerText = "General Knowledge";
 });
 
 
