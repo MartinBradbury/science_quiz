@@ -383,7 +383,7 @@ header .total_questions span p:first-child {
 
 /* selecting correct answer and incorrect answer */
 .option_list .option.correct {
-    padding: 0, 0, 0, 0;
+    padding: 0 0 0 0;
     height: 100%;
     width: 100%;
     color: #175e1a;
@@ -392,7 +392,7 @@ header .total_questions span p:first-child {
 }
 
 .option_list .option.incorrect {
-    padding: 0, 0, 0, 0;
+    padding: 0 0 0 0;
     height: 100%;
     width: 100%;
     color: #721c24;
