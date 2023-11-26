@@ -615,7 +615,7 @@ footer .next_btn {
         align-items: center;
         justify-content: center;
         padding: 20px;
-        margin-top: 130px;
+        margin-top: 180px;
     }
 
     .category_heading {
@@ -629,7 +629,7 @@ footer .next_btn {
 
     .category_area {
         width: 90%;
-        height: 70%;
+        height: 85%;
         padding: 0px 20px;
     }
 
@@ -710,7 +710,8 @@ footer .next_btn {
     }
 
     .buttons .sci_btn,
-    button.games_btn {
+    button.games_btn,
+    button.general_btn {
         height: 70px;
         width: 160px;
     }
