@@ -712,6 +712,7 @@ footer .next_btn {
     .buttons .sci_btn,
     button.games_btn {
         height: 70px;
+        width: 160px;
     }
 
     h1 {
