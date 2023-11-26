@@ -15,9 +15,13 @@ const footer_basic = document.querySelector(".footer_basic");
 const quit = document.querySelector(".quit");
 const scoreText = result_area.querySelector(".score_value");
 const difficulty_area = document.querySelector(".difficulty_area");
+const category_area = document.querySelector(".category_area");
 const easy_btn = document.querySelector(".easy_btn");
 const medium_btn = document.querySelector(".medium_btn");
 const hard_btn = document.querySelector(".hard_btn");
+const sci_btn = document.querySelector(".sci_btn");
+const games_btn = document.querySelector(".games_btn");
+
 
 let questionElement = document.getElementById('question');
 let questionsList = [];
@@ -31,6 +35,8 @@ let progressLine;
 let userScore = 0;
 let opt;
 let difficulty = 'easy';
+let category = '1';
+
 
 // If the start button is clicked
 start_btn.addEventListener("click", () => {
@@ -100,10 +106,20 @@ next_btn.addEventListener("click", () => {
 
 begin_btn.addEventListener("click", () => {
     instructions_area.classList.remove("activeInfo");
-    difficulty_area.classList.add("activeDifficulty");
-    header_main.classList.add("activeHeader");
-    footer_basic.classList.add("activeFooter");
+    category_area.classList.add("activeCategory");
+    //difficulty_area.classList.add("activeDifficulty");
+});
 
+sci_btn.addEventListener("click", () => {
+    category_area.classList.remove("activeCategory");
+    difficulty_area.classList.add("activeDifficulty");
+    category = '17';
+});
+
+games_btn.addEventListener("click", () => {
+    category_area.classList.remove("activeCategory");
+    difficulty_area.classList.add("activeDifficulty");
+    category = '15';
 });
 
 // Reloads the window on restart test button click
@@ -119,7 +135,7 @@ exit_btn.addEventListener("click", () => {
 //Fetching questions from the API and loggin in the console in json
 async function loadQuestion() {
     //console.timeEnd('APIUrl');
-    const APIUrl = `https://opentdb.com/api.php?amount=20&category=17&difficulty=${difficulty}&type=multiple`;
+    const APIUrl = `https://opentdb.com/api.php?amount=20&category=${category}&difficulty=${difficulty}&type=multiple`;
     const result = await fetch(APIUrl);
     const data = await result.json();
     console.time('APIUrl');
