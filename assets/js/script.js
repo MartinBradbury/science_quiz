@@ -42,12 +42,12 @@ let category = '1';
 
 // If the start button is clicked
 start_btn.addEventListener("click", () => {
-    //Shows instructions on click
     instructions_area.classList.add("activeInfo");
     header_main.classList.add("activeHeader");
     footer_basic.classList.add("activeFooter");
 });
 
+// Difficulty Select Buttons
 easy_btn.addEventListener("click", () => {
     difficulty_area.classList.remove("activeDifficulty");
     instructions_area.classList.remove("activeInfo");
@@ -87,6 +87,7 @@ hard_btn.addEventListener("click", () => {
     });
 });
 
+//Quiz next button
 next_btn.addEventListener("click", () => {
     if (question_number < questionsList.length) {
         currentIndex += 1;
@@ -106,12 +107,13 @@ next_btn.addEventListener("click", () => {
 
 });
 
+// Move to category select on click
 begin_btn.addEventListener("click", () => {
     instructions_area.classList.remove("activeInfo");
     category_area.classList.add("activeCategory");
-    //difficulty_area.classList.add("activeDifficulty");
 });
 
+// Category buttons
 sci_btn.addEventListener("click", () => {
     category_area.classList.remove("activeCategory");
     difficulty_area.classList.add("activeDifficulty");
@@ -154,7 +156,6 @@ exit_btn.addEventListener("click", () => {
 
 //Fetching questions from the API and loggin in the console in json
 async function loadQuestion() {
-    //console.timeEnd('APIUrl');
     const APIUrl = `https://opentdb.com/api.php?amount=20&category=${category}&difficulty=${difficulty}&type=multiple`;
     const result = await fetch(APIUrl);
     const data = await result.json();
@@ -165,8 +166,6 @@ async function loadQuestion() {
     showQuestion();
 }
 
-/* correct_answer is from the json data */
-/* incorrect_answers is from the json data*/
 //display Question and options
 function showQuestion() {
     let question = questionsList[currentIndex];
@@ -182,7 +181,7 @@ function showQuestion() {
     // Add the correct answer to the list
     optionsList.push(correctAnswer);
 
-    // Shuffle the options list again to ensure the correct answer is not always in the same position
+    // Shuffle options list again. Ensures correct answer is not always in the same position
     optionsList.sort(() => Math.random() - 0.5);
 
     questionElement.innerHTML = `${question.question}`;
@@ -203,6 +202,7 @@ function attachOptionListeners() {
 
 }
 
+// Selecting an option and comparing if correct to api
 function optionSelected(event) {
     console.log(event.target.textContent);
     clearInterval(counter);
@@ -247,6 +247,7 @@ function questionCounter(question_number) {
     top_q_counter.innerHTML = totalQTag;
 }
 
+// Display the results area at the end of the quiz
 function showResultArea() {
     instructions_area.classList.remove("activeInfo");
     game_area.classList.remove("activeGame");
@@ -268,7 +269,6 @@ function showResultArea() {
     }
 
     //Calculate percentage function and round to whole number
-
     let percentage = function calculatePercentage(x, y) {
         return Math.round((x / y) * 100);
     };
