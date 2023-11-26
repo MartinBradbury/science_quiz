@@ -22,6 +22,7 @@ const hard_btn = document.querySelector(".hard_btn");
 const sci_btn = document.querySelector(".sci_btn");
 const games_btn = document.querySelector(".games_btn");
 const film_btn = document.querySelector(".film_btn");
+const general_btn = document.querySelector(".general_btn");
 
 let questionElement = document.getElementById('question');
 let questionsList = [];
@@ -127,6 +128,14 @@ film_btn.addEventListener("click", () => {
     difficulty_area.classList.add("activeDifficulty");
     category = '11';
 });
+
+general_btn.addEventListener("click", () => {
+    category_area.classList.remove("activeCategory");
+    difficulty_area.classList.add("activeDifficulty");
+    category = '9';
+});
+
+
 
 // Reloads the window on restart test button click
 quit.addEventListener("click", () => {
