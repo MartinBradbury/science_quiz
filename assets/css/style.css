@@ -583,7 +583,7 @@ footer .next_btn {
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
     .heading h1 {
         font-size: 40px;
@@ -615,7 +615,7 @@ footer .next_btn {
         align-items: center;
         justify-content: center;
         padding: 20px;
-        margin-top: 150px;
+        margin-top: 130px;
     }
 
     .category_heading {
@@ -629,7 +629,7 @@ footer .next_btn {
 
     .category_area {
         width: 90%;
-        height: 50%;
+        height: 70%;
         padding: 0px 20px;
     }
 
@@ -645,7 +645,7 @@ footer .next_btn {
         align-items: center;
         justify-content: center;
         padding: 20px;
-        margin-top: 150px;
+        margin-top: 130px;
     }
 
     .difficulty_heading {
@@ -659,7 +659,7 @@ footer .next_btn {
     /* Difficulty Area */
     .difficulty_area {
         width: 90%;
-        height: 50%;
+        height: 70%;
         padding: 0px 20px;
     }
 
@@ -707,6 +707,11 @@ footer .next_btn {
         height: 50px;
         margin: 5px 30px;
         padding: 10px 30px 15px 30px;
+    }
+
+    .buttons .sci_btn,
+    button.games_btn {
+        height: 70px;
     }
 
     h1 {
