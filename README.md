@@ -310,7 +310,7 @@ Social Media | Click social media icons takes <br> user to social media site. | 
 ## Quiz difficulty
 
 *   As well as being able to select the different quiz category, I have also given the user the opportunity to select the difficulty. This can be easy  medium or hard. On the selection the correct diffcculty questions for the category selected will be loaded into the quiz.
-![Difficulty](assets/images/difficulty.pny)
+![Difficulty](assets/images/difficulty.png)
 
 ## Option array sort
 
@@ -319,9 +319,9 @@ Social Media | Click social media icons takes <br> user to social media site. | 
 ## Quiz Category Heading
 
 *   To provide feedback to the user, I have also ensure that the quiz selected will appear above the timer line when the user is completing the quiz. This dynamically changes depending on the quiz selected. I looked at also displaying the difficulty but I felt that this made the header of the quiz look too cluttered and could be distracting. 
-![Category in quiz](assets/images/catingame1.pny)
+![Category in quiz](assets/images/catingame1.png)
 
-![Category in quiz](assets/images/catingame2.pny)
+![Category in quiz](assets/images/catingame2.png)
 
 
 
