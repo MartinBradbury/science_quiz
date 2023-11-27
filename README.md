@@ -40,6 +40,9 @@ This interactive A Level Biology Biological Molecules test is aimed at Year 12 a
 - [Deployment](#deployment)
 - [Credits](#credits)
 - [Acknowledgements](#acknowledgements)
+- [Modificatio following assesor feedback.](#modificatio-following-assesor-feedback)
+  - [API to generate questions](#api-to-generate-questions)
+  - [Quiz categories](#quiz-categories)
 
 # Target Audience
 *   This test is aimed at students who are currently studying A Level Biology. It is intended as a quick knowledge check to test understanding and retention of the content taught. It can also be used a fun test for people who studied A level Biology in the past and want to see how much they can remember. 
@@ -273,3 +276,33 @@ Social Media | Click social media icons takes <br> user to social media site. | 
 * I would like to thank my mentor 'narender mentor' for the support and guidance throughout the project. He helped me push and challenge myself with the code through the project development.
 * I would like to thank my colleagues on Slack who provide help, support and essential feedback.
 * I would like to thank my family in supporting me on this journey and allowing me the time to dedicated to this project. 
+
+
+# Modificatio following assesor feedback.
+
+*   LO1 1.7 - 1.7	No	There is an insufficient amount of custom code present as most of the current code has been copied/adapted from the referenced tutorials. 
+*   LO4 4.3 / 4.4 Where code has been copied/adapted from an external source (such as a tutorial), attributions should be added in comments above the relevant code, with a link to the source.
+*   Merit Creteria 1.3 Most of the current code has been copied/adapted from the referenced tutorials. A significant amount of custom functionality is required to adequately demonstrate your abilities with JavaScript.
+*   Further comments following Assesor feedback: . A scoreboard, difficulty options and/or using an API to generate questions would all work well.
+
+
+## API to generate questions
+
+*   I have written javascript to use an API to generate the questions for the quiz. As this is no longer a specific A Level Biology quiz, modifications have also been made to the quiz title as well as changing the instructions from test to quiz. 
+*   I have also changed how the API questions and options are written to the HTML in the javascript.
+   
+*   The API i have used is a free open API (https://opentdb.com/api_config.php).
+![Open Trivia API](assets/images/opentriviaapi.png)
+
+*   Modifications to the quiz heading can be seen below.
+![New Title](assets/images/title.png)
+
+## Quiz categories
+
+*   Following feedback I have written javascript to enable the user to play one of 4 different quizes on the open trivia DB. The category select follows the same style and presentation of the quiz and enable the user to select, science and nature, film, general knoweldge and video games. These options are displayed after the user reads the rules and click the cateogry button.
+![Category Button](assets/images/categorybtn.pny)
+
+![category](assets/images/category.png)
+
+
+
