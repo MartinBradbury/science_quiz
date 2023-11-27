@@ -43,6 +43,9 @@ This interactive A Level Biology Biological Molecules test is aimed at Year 12 a
 - [Modificatio following assesor feedback.](#modificatio-following-assesor-feedback)
   - [API to generate questions](#api-to-generate-questions)
   - [Quiz categories](#quiz-categories)
+  - [Quiz difficulty](#quiz-difficulty)
+  - [Option array sort](#option-array-sort)
+  - [Quiz Category Heading](#quiz-category-heading)
 
 # Target Audience
 *   This test is aimed at students who are currently studying A Level Biology. It is intended as a quick knowledge check to test understanding and retention of the content taught. It can also be used a fun test for people who studied A level Biology in the past and want to see how much they can remember. 
@@ -300,9 +303,25 @@ Social Media | Click social media icons takes <br> user to social media site. | 
 ## Quiz categories
 
 *   Following feedback I have written javascript to enable the user to play one of 4 different quizes on the open trivia DB. The category select follows the same style and presentation of the quiz and enable the user to select, science and nature, film, general knoweldge and video games. These options are displayed after the user reads the rules and click the cateogry button.
-![Category Button](assets/images/categorybtn.pny)
+![Category Button](assets/images/categorybtn.png)
 
 ![category](assets/images/category.png)
+
+## Quiz difficulty
+
+*   As well as being able to select the different quiz category, I have also given the user the opportunity to select the difficulty. This can be easy  medium or hard. On the selection the correct diffcculty questions for the category selected will be loaded into the quiz.
+![Difficulty](assets/images/difficulty.pny)
+
+## Option array sort
+
+*   I discovered a bug when using the API where sometimes more than 4 options would be displayed with one being repeated. I re wrote the shuffle options array javascript to ensure that there would always only be 4 options, 1 correct and 3 incorrect in a random position.
+
+## Quiz Category Heading
+
+*   To provide feedback to the user, I have also ensure that the quiz selected will appear above the timer line when the user is completing the quiz. This dynamically changes depending on the quiz selected. I looked at also displaying the difficulty but I felt that this made the header of the quiz look too cluttered and could be distracting. 
+![Category in quiz](assets/images/catingame1.pny)
+
+![Category in quiz](assets/images/catingame2.pny)
 
 
 
