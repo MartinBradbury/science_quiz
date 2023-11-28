@@ -40,12 +40,15 @@ This interactive A Level Biology Biological Molecules test is aimed at Year 12 a
 - [Deployment](#deployment)
 - [Credits](#credits)
 - [Acknowledgements](#acknowledgements)
-- [Modificatio following assesor feedback.](#modificatio-following-assesor-feedback)
+- [Modification following assessor feedback](#modification-following-assessor-feedback)
   - [API to generate questions](#api-to-generate-questions)
   - [Quiz categories](#quiz-categories)
   - [Quiz difficulty](#quiz-difficulty)
   - [Option array sort](#option-array-sort)
   - [Quiz Category Heading](#quiz-category-heading)
+  - [Remaining Bugs](#remaining-bugs)
+- [Addition to Credits](#addition-to-credits)
+- [Additional Acknowledgements](#additional-acknowledgements)
 
 # Target Audience
 *   This test is aimed at students who are currently studying A Level Biology. It is intended as a quick knowledge check to test understanding and retention of the content taught. It can also be used a fun test for people who studied A level Biology in the past and want to see how much they can remember. 
@@ -281,47 +284,57 @@ Social Media | Click social media icons takes <br> user to social media site. | 
 * I would like to thank my family in supporting me on this journey and allowing me the time to dedicated to this project. 
 
 
-# Modificatio following assesor feedback.
+# Modification following assessor feedback
 
-*   LO1 1.7 - 1.7	No	There is an insufficient amount of custom code present as most of the current code has been copied/adapted from the referenced tutorials. 
-*   LO4 4.3 / 4.4 Where code has been copied/adapted from an external source (such as a tutorial), attributions should be added in comments above the relevant code, with a link to the source.
-*   Merit Creteria 1.3 Most of the current code has been copied/adapted from the referenced tutorials. A significant amount of custom functionality is required to adequately demonstrate your abilities with JavaScript.
-*   Further comments following Assesor feedback: . A scoreboard, difficulty options and/or using an API to generate questions would all work well.
-
+- LO1 1.7 - 1.7   No There is an insufficient amount of custom code present as most of the current code has been copied/adapted from the referenced tutorials.
+- LO4 4.3 / 4.4 Where code has been copied/adapted from an external source (such as a tutorial), attributions should be added in comments above the relevant code, with a link to the source.
+- Merit Criteria 1.3 Most of the current code has been copied/adapted from the referenced tutorials. A significant amount of custom functionality is required to adequately demonstrate your abilities with JavaScript.
+- Further comments following Assessors feedback: . A scoreboard, difficulty options and/or using an API to generate questions would all work well.
 
 ## API to generate questions
 
-*   I have written javascript to use an API to generate the questions for the quiz. As this is no longer a specific A Level Biology quiz, modifications have also been made to the quiz title as well as changing the instructions from test to quiz. 
-*   I have also changed how the API questions and options are written to the HTML in the javascript.
-   
-*   The API i have used is a free open API (https://opentdb.com/api_config.php).
+- Modification to my original quiz where I got questions I had written from questions.js, I have written JavaScript to use an online API to fetch questions and answers for the quiz. As this is no longer a specific A Level Biology quiz, modifications have also been made to the quiz title as well as changing the instructions from test to quiz.
+- I have also modified the JavaScript for how the questions and options are written to HTML from the API.
+
+- The API i have used is a free open API (<https://opentdb.com/api_config.php>).
 ![Open Trivia API](assets/images/opentriviaapi.png)
 
-*   Modifications to the quiz heading can be seen below.
+- Modifications to the quiz heading can be seen below.
 ![New Title](assets/images/title.png)
 
 ## Quiz categories
 
-*   Following feedback I have written javascript to enable the user to play one of 4 different quizes on the open trivia DB. The category select follows the same style and presentation of the quiz and enable the user to select, science and nature, film, general knoweldge and video games. These options are displayed after the user reads the rules and click the cateogry button.
+- Following feedback I have written JavaScript to enable the user to play one of 4 different quizzes on the open trivia DB. The category select follows the same style and presentation of the quiz and enable the user to select, science and nature, film, general knowledge and video games. These options are displayed after the user reads the rules and click the category button.
 ![Category Button](assets/images/categorybtn.png)
 
 ![category](assets/images/category.png)
 
 ## Quiz difficulty
 
-*   As well as being able to select the different quiz category, I have also given the user the opportunity to select the difficulty. This can be easy  medium or hard. On the selection the correct diffcculty questions for the category selected will be loaded into the quiz.
+- As well as being able to select the different quiz category, I have also given the user the opportunity to select the difficulty. This can be easy, medium or hard. On the selection the correct difficulty questions for the category selected will be loaded into the quiz.
 ![Difficulty](assets/images/difficulty.png)
 
 ## Option array sort
 
-*   I discovered a bug when using the API where sometimes more than 4 options would be displayed with one being repeated. I re wrote the shuffle options array javascript to ensure that there would always only be 4 options, 1 correct and 3 incorrect in a random position.
+- Although my quiz did shuffle and sort the array when I used the API the function did not work as intended. I discovered a bug where sometimes more than 4 options would be displayed with one being repeated. I re wrote the shuffle options array in JavaScript to ensure that there would always only be 4 options, 1 correct and 3 incorrect in a random position.
 
 ## Quiz Category Heading
 
-*   To provide feedback to the user, I have also ensure that the quiz selected will appear above the timer line when the user is completing the quiz. This dynamically changes depending on the quiz selected. I looked at also displaying the difficulty but I felt that this made the header of the quiz look too cluttered and could be distracting. 
+- To provide feedback to the user, I have also ensured that the quiz selected will appear above the timer line when the user is completing the quiz. This dynamically changes depending on the quiz selected. I looked at also displaying the difficulty, but I felt that this made the header of the quiz look too cluttered and could be distracting.
 ![Category in quiz](assets/images/catingame1.png)
 
 ![Category in quiz](assets/images/catingame2.png)
 
+## Remaining Bugs
 
+- Certain questions or options that use special characters do not display correctly in the console and as a result, even when the user selects the correct answer, it does not display as correct. Likewise, if the user selects the incorrect answer, the correct answer does not show. This is rare and only a few questions cause this. It does not affect any other aspect of the quiz. With more development time I would correct this issue.
 
+- API fails to load: If the API fails to load no message is shown to the user even though the timer starts and timeline. With more development time I would like to write script that would provide user feedback if the API failed to load. I would do this in the same way I have with category select and difficulty. It would inform the user that their API is currently unavailable.
+
+# Addition to Credits
+
+- [Open Trivia DB](https://opentdb.com/api_config.php) Was used as the API for the questions and provided the link I pasted into my JavaScript. Modification to this link enabled me to allow changed to difficulty and category.
+
+# Additional Acknowledgements
+
+- I would also like to highlight additional thanks to my mentor who provided an extra session to look over the assessors feedback.  
