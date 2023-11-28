@@ -376,18 +376,12 @@ header .total_questions span p:first-child {
 
 /* selecting correct answer and incorrect answer */
 .option_list .option.correct {
-    padding: 0 0 0 0;
-    height: 100%;
-    width: 100%;
     color: #175e1a;
     background: #64ad75;
     border-color: #03290c;
 }
 
 .option_list .option.incorrect {
-    padding: 0 0 0 0;
-    height: 100%;
-    width: 100%;
     color: #721c24;
     background: #ed3545;
     border-color: #f5c6cb;
