@@ -41,11 +41,13 @@ This interactive A Level Biology Biological Molecules test is aimed at Year 12 a
 - [Credits](#credits)
 - [Acknowledgements](#acknowledgements)
 - [Modification following assessor feedback](#modification-following-assessor-feedback)
+  - [Assessor feedback](#assessor-feedback)
   - [API to generate questions](#api-to-generate-questions)
   - [Quiz categories](#quiz-categories)
   - [Quiz difficulty](#quiz-difficulty)
   - [Option array sort](#option-array-sort)
   - [Quiz Category Heading](#quiz-category-heading)
+  - [Further Testing](#further-testing)
   - [Remaining Bugs](#remaining-bugs)
 - [Addition to Credits](#addition-to-credits)
 - [Additional Acknowledgements](#additional-acknowledgements)
@@ -286,6 +288,8 @@ Social Media | Click social media icons takes <br> user to social media site. | 
 
 # Modification following assessor feedback
 
+## Assessor feedback
+
 - LO1 1.7 - 1.7   No There is an insufficient amount of custom code present as most of the current code has been copied/adapted from the referenced tutorials.
 - LO4 4.3 / 4.4 Where code has been copied/adapted from an external source (such as a tutorial), attributions should be added in comments above the relevant code, with a link to the source.
 - Merit Criteria 1.3 Most of the current code has been copied/adapted from the referenced tutorials. A significant amount of custom functionality is required to adequately demonstrate your abilities with JavaScript.
@@ -293,7 +297,9 @@ Social Media | Click social media icons takes <br> user to social media site. | 
 
 ## API to generate questions
 
-- Modification to my original quiz where I got questions I had written from questions.js, I have written JavaScript to use an online API to fetch questions and answers for the quiz. As this is no longer a specific A Level Biology quiz, modifications have also been made to the quiz title as well as changing the instructions from test to quiz.
+- Modification to my original quiz where I got questions I had written from questions.js, I have written JavaScript to use an online API to fetch questions and answers for the quiz. 
+- As this is no longer a specific A Level Biology quiz, modifications have also been made to the quiz title as well as changing the instructions from test to quiz.
+- The results section will still calculate a percentage an give a grade based on the users score.
 - I have also modified the JavaScript for how the questions and options are written to HTML from the API.
 
 - The API i have used is a free open API (<https://opentdb.com/api_config.php>).
