@@ -45,7 +45,7 @@ start_btn.addEventListener("click", () => {
     footer_basic.classList.add("activeFooter");
 });
 
-// Difficulty Select Buttons
+// Difficulty Select Buttons Easy / Medium / Hard
 easy_btn.addEventListener("click", () => {
     difficulty_area.classList.remove("activeDifficulty");
     instructions_area.classList.remove("activeInfo");
@@ -172,16 +172,9 @@ function showQuestion() {
 
     // Shuffle the incorrect answers array
     incorrectAnswer.sort(() => Math.random() - 0.5);
-
-    // Select the first three incorrect answers
     let optionsList = incorrectAnswer.slice(0, 3);
-
-    // Add the correct answer to the list
     optionsList.push(correctAnswer);
-
-    // Shuffle options list again. Ensures correct answer is not always in the same position
     optionsList.sort(() => Math.random() - 0.5);
-
     questionElement.innerHTML = `${question.question}`;
     options.innerHTML = `${optionsList.map((option) => `<li class="option">${option}</li>`).join('')}`;
 
@@ -302,7 +295,7 @@ function showResultArea() {
     }
 }
 
-//timer function
+//timer function.
 function startTimer(time) {
     counter = setInterval(timer, 1000);
     function timer() {

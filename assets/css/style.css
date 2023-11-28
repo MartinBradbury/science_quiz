@@ -18,7 +18,6 @@ h2 {
     text-align: center;
 }
 
-
 .heading {
     display: flex;
     align-items: center;
@@ -142,9 +141,6 @@ h2 {
     color: rgb(3, 46, 103);
 }
 
-
-
-
 /* Instructions area */
 .instructions_area {
 
@@ -193,7 +189,6 @@ h2 {
     align-items: center;
     justify-content: center;
     padding: 0 35px;
-    /* border-top: 1px solid lightgrey; */
 }
 
 .buttons button {
@@ -225,7 +220,6 @@ h2 {
 }
 
 /* Game Area */
-
 .game_area {
     min-width: 60%;
     background: rgb(228, 232, 250);
@@ -321,7 +315,6 @@ header .total_questions span p:first-child {
 }
 
 /* Test section styling */
-
 .game_area .play_area {
     display: flex;
     align-items: center;
@@ -606,9 +599,7 @@ footer .next_btn {
         bottom: 10%;
     }
 
-
     /* Category area */
-
     #cat_buttons {
         display: flex;
         flex-direction: column;
@@ -626,17 +617,11 @@ footer .next_btn {
         padding: 5px;
     }
 
-
     .category_area {
         width: 90%;
         height: 85%;
         padding: 0px 20px;
     }
-
-
-
-
-
 
     /* Difficukty area */
     #diff_buttons {
