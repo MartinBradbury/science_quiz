@@ -325,6 +325,12 @@ Social Media | Click social media icons takes <br> user to social media site. | 
 
 ![Category in quiz](assets/images/catingame2.png)
 
+## Further Testing
+
+*   The quiz has be retested on different devices to ensure it functions as intended.
+*   W3C Validation on the CSS and HTML displays no new errors.
+*   JsHint showed no new errors in the JavaScript.
+
 ## Remaining Bugs
 
 - Certain questions or options that use special characters do not display correctly in the console and as a result, even when the user selects the correct answer, it does not display as correct. Likewise, if the user selects the incorrect answer, the correct answer does not show. This is rare and only a few questions cause this. It does not affect any other aspect of the quiz. With more development time I would correct this issue.
