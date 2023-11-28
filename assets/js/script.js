@@ -324,7 +324,7 @@ function startTimer(time) {
     }
 }
 
-// Progress bar function 
+// Progress bar function [Open Source Coding](https://www.youtube.com/watch?v=LJ4PZ8JnRCg&t=1662s)
 function startTimerLine(time) {
     progressLine = setInterval(timer, 160);
     time = 100;
